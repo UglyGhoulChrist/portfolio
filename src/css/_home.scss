@@ -1,8 +1,8 @@
 .home {
 
     &__container {
-        padding-top: 200px;
-        padding-bottom: 160px;
+        padding-top: 150px;
+        padding-bottom: 110px;
     }
 
     &__block {
@@ -12,19 +12,15 @@
     &__text {
         font-weight: 450;
         font-size: 18px;
-        line-height: 24px;
-        color: $color-h1;
+        line-height: 27px;
+        color: $color-text;
     }
-
-    // .home__title
 
     &__title {
         font-size: 62px;
         line-height: 81px;
         color: $color-h1;
     }
-
-    // .home__subtitle
 
     &__subtitle {
         font-weight: 450;
@@ -34,22 +30,17 @@
         margin-bottom: 82px;
     }
 
-    // .home__subtext
-
     &__subtext {
-        margin-bottom: 10px;
         font-weight: 450;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 24px;
         color: $color-text;
     }
-
-    // .home__link
 
     &__link {
         font-weight: 500;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 24px;
         color: $color-link;
         position: relative;
         transition: all 1s ease 0s;
@@ -74,14 +65,9 @@
         }
     }
 
-    // .home__picture
-
     &__picture {
         max-width: 569px;
-
     }
-
-    // .home__image
 
     &__image {
         width: 100%;

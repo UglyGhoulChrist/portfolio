@@ -1,19 +1,13 @@
 .about {
 
-    // .about__container
-
     &__container {
-        padding-top: 140px;
-        padding-bottom: 160px;
+        padding-top: 90px;
+        padding-bottom: 86px;
     }
-
-    // .about__block
 
     &__block {
         vertical-align: top;
     }
-
-    // .about__subtitle
 
     &__subtitle {
         font-weight: 450;
@@ -23,17 +17,14 @@
         margin-bottom: 82px;
     }
 
-    // .about__text
-
     &__text {
         font-weight: 450;
         font-size: 18px;
-        line-height: 150%;
+        line-height: 27px;
         color: $color-text;
         text-align: justify;
+        margin-bottom: 24px;
     }
-
-    // .about__list
 
     &__list {
         display: flex;
@@ -52,14 +43,11 @@
     text-align: center;
     transition: all 1s ease 0s;
 
-    // .card__title
-
     &__title {
         font-weight: 450;
         font-size: 18px;
-        line-height: 150%;
+        line-height: 27px;
         color: $color-text;
-
 
         &::before {
             content: '';
@@ -74,16 +62,12 @@
         }
     }
 
-    // .card__picture
-
     &__picture {
         margin: 0 auto;
         width: 60px;
         height: 60px;
         margin-bottom: 20px;
     }
-
-    // .card__image
 
     &__image {
         width: 100%;

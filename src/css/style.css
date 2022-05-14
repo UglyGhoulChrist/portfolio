@@ -132,8 +132,8 @@ body {
 }
 
 .home__container {
-  padding-top: 200px;
-  padding-bottom: 160px;
+  padding-top: 150px;
+  padding-bottom: 110px;
 }
 
 .home__block {
@@ -143,7 +143,7 @@ body {
 .home__text {
   font-weight: 450;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   color: #E3F2FD;
 }
 
@@ -162,17 +162,16 @@ body {
 }
 
 .home__subtext {
-  margin-bottom: 10px;
   font-weight: 450;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
   color: #E3F2FD;
 }
 
 .home__link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
   color: #90CAF9;
   position: relative;
   -webkit-transition: all 1s ease 0s;
@@ -209,8 +208,8 @@ body {
 }
 
 .about__container {
-  padding-top: 140px;
-  padding-bottom: 160px;
+  padding-top: 90px;
+  padding-bottom: 86px;
 }
 
 .about__block {
@@ -228,9 +227,10 @@ body {
 .about__text {
   font-weight: 450;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
   color: #E3F2FD;
   text-align: justify;
+  margin-bottom: 24px;
 }
 
 .about__list {
@@ -258,7 +258,7 @@ body {
 .card__title {
   font-weight: 450;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
   color: #E3F2FD;
 }
 
@@ -297,4 +297,75 @@ body {
 
 .card:hover .card__title::before {
   background: black;
+}
+
+.project__container {
+  padding-top: 90px;
+  padding-bottom: 86px;
+}
+
+.project__subtitle {
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 42px;
+  color: #3F51B5;
+  margin-bottom: 82px;
+}
+
+.project__block {
+  vertical-align: top;
+  margin-bottom: 24px;
+}
+
+.project__text {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 27px;
+  color: #E3F2FD;
+}
+
+.project__subtext {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E3F2FD;
+}
+
+.project__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #90CAF9;
+  position: relative;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.project__link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: orange;
+  position: absolute;
+  top: 25px;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.project__link:hover {
+  color: #E3F2FD;
+}
+
+.project__link:hover::after {
+  width: 100%;
+}
+
+.project__picture {
+  max-width: 569px;
+}
+
+.project__image {
+  width: 100%;
+  border-radius: 5px;
 }
