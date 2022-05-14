@@ -47,6 +47,18 @@
         position: relative;
         transition: all 1s ease 0s;
 
+        &_violet{
+            color:$color-text-violet;
+        }
+
+        &_green{
+            color:$color-text-green;
+        }
+
+        &_pink{
+            color:$color-text-pink;
+        }
+
         &::after {
             content: '';
             display: block;

@@ -146,7 +146,7 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 27px;
-  color: #E3F2FD;
+  color: #c8c8c8;
 }
 
 .home__title {
@@ -167,7 +167,7 @@ body {
   font-weight: 450;
   font-size: 16px;
   line-height: 24px;
-  color: #E3F2FD;
+  color: #c8c8c8;
 }
 
 .home__link {
@@ -178,6 +178,18 @@ body {
   position: relative;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
+}
+
+.home__link_violet {
+  color: #4D5BCE;
+}
+
+.home__link_green {
+  color: #43D9AD;
+}
+
+.home__link_pink {
+  color: #E99287;
 }
 
 .home__link::after {
@@ -231,7 +243,7 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 27px;
-  color: #E3F2FD;
+  color: #c8c8c8;
   text-align: justify;
   margin-bottom: 24px;
 }
@@ -262,7 +274,7 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 27px;
-  color: #E3F2FD;
+  color: #c8c8c8;
 }
 
 .card__title::before {
@@ -325,14 +337,14 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 27px;
-  color: #E3F2FD;
+  color: #c8c8c8;
 }
 
 .project__subtext {
   font-weight: 450;
   font-size: 16px;
   line-height: 24px;
-  color: #E3F2FD;
+  color: #c8c8c8;
 }
 
 .project__link {
@@ -373,3 +385,66 @@ body {
   width: 100%;
   border-radius: 5px;
 }
+
+.contact__container {
+  padding-top: 90px;
+  padding-bottom: 86px;
+  min-height: 100vh;
+}
+
+.contact__subtitle {
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 42px;
+  color: #3F51B5;
+  margin-bottom: 82px;
+}
+
+.contact__block {
+  vertical-align: top;
+}
+
+.form__subtext {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: #c8c8c8;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  margin-bottom: 24px;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.form__button {
+  background: #242424;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 24px;
+  color: #c8c8c8;
+}
+
+.code__item {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 27px;
+  color: #c8c8c8;
+}
+
+.code__item_pink {
+  color: #E99287;
+}
+
+.code__item_violet {
+  color: #4D5BCE;
+}
+
+.code__item_green {
+  color: #43D9AD;
+}
+/*# sourceMappingURL=style.css.map */

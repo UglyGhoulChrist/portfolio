@@ -23,7 +23,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link">_hello</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">_about-me</a></li>
                         <li class="nav__item"><a href="#project" class="nav__link">_projects</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">_contact-me</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">_contact-me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,7 +38,9 @@
                         <h2 class="home__subtitle">&gt; Front-end developer</h2>
                         <div class="home__subtext">// complete the game to continue</div>
                         <div class="home__subtext">// you can also see it on my Github page</div>
-                        <a href="#" class="home__link">const githubLink = “https://github.com/example/url”</a>
+                        <a href="#" class="home__link"><span class="home__link_violet"></span>const<span
+                                class="home__link_green"> githubLink</span> = <span
+                                class="home__link_pink">“https://github.com/example/url”</span></a>
                     </div>
                     <div class="home__block">
                         <div class="home__picture">
@@ -120,14 +122,63 @@
             </section>
 
 
+            <section class="contact" id="contact">
+                <div class="contact__container">
+                    <h2 class="contact__subtitle">&gt; Contacts</h2>
+                    <div class="contact__block">
+                        <div class="form">form
+                            <div class="form__subtext">_name:</div>
+                            <div class="form__input"></div>
+                            <div class="form__subtext">_email:</div>
+                            <div class="form__input"></div>
+                            <div class="form__subtext">_message:</div>
+                            <div class="form__input"></div>
+                            <button class="form__button">submit-message</button>
+                        </div>
+                    </div>
+                    <div class="contact__block">
+                        <div class="code">
+                            <ul class="code__list">
+                                <li class="code__item"><span class="code__item_pink">const </span><span
+                                        class="code__item_violet">button </span><span class="code__item_pink">=
+                                    </span><span class="code__item_violet">document.querySelector </span>( <span
+                                        class="code__item_green">'#sendBtn' </span>);</li>
+                                <li class="code__item"></li>
+                                <li class="code__item"><span class="code__item_pink">const </span><span
+                                        class="code__item_violet">message </span><span class="code__item_pink">=
+                                    </span>{</li>
+                                <li class="code__item"><span class="code__item_violet"> name</span>
+                                    : <span class="code__item_green">"Jonathan Davis"</span>, </li>
+                                <li class="code__item">
+                                    <span class="code__item_violet"> email</span>
+                                    : <span class="code__item_green">""</span>,
+                                </li>
+                                <li class="code__item">
+                                    <span class="code__item_violet"> message</span>
+                                    : <span class="code__item_green">""</span>,
+                                </li>
+                                <li class="code__item"> date: <span class="code__item_green">"Thu 21 Apr"</span></li>
+                                <li class="code__item">}</li>
+                                <li class="code__item"></li>
+                                <li class="code__item">
+                                    <span class="code__item_violet">button.addEventListener</span>(
+                                    <span class="code__item_green">'click'</span>, ()
+                                    <span class="code__item_green"> =&gt;</span> {
+                                </li>
+                                <li class="code__item">
+                                    <span class="code__item_violet"> form.send</span>(<span class="code__item_violet">
+                                        message</span> );
+                                </li>
+                                <li class="code__item">})</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
 
-
-            <div style="font-size:16px">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                тексты. Одна буквенных даль текста города жизни? Запятой возвращайся парадигматическая языкового,
-                коварных безорфографичный он рукописи рекламных ipsum меня, сбить залетают скатился?</div>
 
         </main>
         <footer class="footer container">

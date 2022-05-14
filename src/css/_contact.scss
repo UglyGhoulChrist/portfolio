@@ -1,5 +1,91 @@
-// &__container {
-//     padding-top: 90px;
-//     padding-bottom: 86px;
-//     min-height: 100vh;
-// }
+.contact {
+
+    // .contact__container
+
+    &__container {
+        padding-top: 90px;
+        padding-bottom: 86px;
+        min-height: 100vh;
+    }
+
+    // .contact__subtitle
+
+    &__subtitle {
+        font-weight: 450;
+        font-size: 32px;
+        line-height: 42px;
+        color: $color-h2;
+        margin-bottom: 82px;
+    }
+
+    // .contact__block
+
+    &__block {
+        vertical-align: top;
+    }
+}
+
+.form {
+
+    // .form__subtext
+
+    &__subtext {
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+        margin-bottom: 10px;
+    }
+
+    // .form__input
+
+    &__input {
+        margin-bottom: 24px;
+        border: 1px solid $border;
+        border-radius: 8px;
+        padding: 10px 15px;
+    }
+
+    // .form__button
+
+    &__button {
+        background:  $border;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+    }
+}
+
+.code {
+
+    &__list {}
+
+    &__item {
+        font-weight: 450;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-text;
+
+        &_pink {
+           color: $color-text-pink;
+        }
+
+        &_violet {
+            color: $color-text-violet;
+        }
+
+        &_green {
+            color: $color-text-green;
+        }
+    }
+}
+
+
+
+
+
+
+
