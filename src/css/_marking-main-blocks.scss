@@ -1,0 +1,14 @@
+/* Разметка основных блоков */
+
+body {
+    background: rgb(0, 0, 0 );
+    font-family: 'Fira Code', monospace;
+}
+
+[class*='__container'] {
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+
+/* Разметка основных блоков КОНЕЦ */
