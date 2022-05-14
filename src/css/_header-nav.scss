@@ -1,12 +1,11 @@
-.header {
-}
+.header {}
 
 .nav {
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        border-bottom: 1px solid  rgb(30, 45, 61)
+        border-bottom: 3px solid $border;
     }
 
     &__item {
@@ -17,24 +16,25 @@
         font-weight: 450;
         font-size: 16px;
         line-height: 21px;
-        color: #607B96;
+        color: $color-link;
         position: relative;
         transition: all 1s ease 0s;
 
-        &::after{
+        &::after {
             content: '';
             display: block;
             width: 0%;
             height: 3px;
-            background:#34C759;
+            background: $color-link-after ;
             position: absolute;
             top: 25px;
             transition: all 1s ease 0s;
-         }
+        }
 
         &:hover {
-            color: white;
-            &::after{
+            color: $color-link-hover;
+
+            &::after {
                 width: 100%;
             }
         }

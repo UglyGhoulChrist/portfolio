@@ -1,10 +1,9 @@
 .home {
-    
 
     &__container {
         padding-top: 100px;
         padding-bottom: 160px;
-        border-bottom: 1px solid  rgb(30, 45, 61)
+        border-bottom: 3px solid $border;
     }
 
     &__block {
@@ -17,7 +16,7 @@
         font-weight: 450;
         font-size: 18px;
         line-height: 24px;
-        color: #E5E9F0;
+        color: $color-h1;
     }
 
     // .home__title
@@ -25,7 +24,7 @@
     &__title {
         font-size: 62px;
         line-height: 81px;
-        color: #E5E9F0;
+        color: $color-h1;
     }
 
     // .home__subtitle
@@ -34,7 +33,7 @@
         font-weight: 450;
         font-size: 32px;
         line-height: 42px;
-        color: #4D5BCE;
+        color: $color-h2;
         margin-bottom: 82px;
     }
 
@@ -45,7 +44,7 @@
         font-weight: 450;
         font-size: 16px;
         line-height: 21px;
-        color: #607B96;
+        color: $color-text;
     }
 
     // .home__link
@@ -54,7 +53,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
-        color: #4D5BCE;
+        color: $color-h2;
         position: relative;
         transition: all 1s ease 0s;
 
@@ -63,14 +62,14 @@
             display: block;
             width: 0%;
             height: 3px;
-            background: #34C759;
+            background: $color-link-after;
             position: absolute;
             top: 25px;
             transition: all 1s ease 0s;
         }
 
         &:hover {
-            color: white;
+            color: $color-link-hover;
 
             &::after {
                 width: 100%;
