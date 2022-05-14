@@ -1,6 +1,13 @@
 .header {}
 
 .nav {
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    top: -1px;
+    z-index: 100;
+    background: $background-color;
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -9,7 +16,7 @@
     }
 
     &__item {
-        padding: 17px 32px;
+        padding: 18px 1%;
     }
 
     &__link {

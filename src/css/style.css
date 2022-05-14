@@ -65,10 +65,26 @@ body {
 [class*='__container'] {
   max-width: 1140px;
   margin: 0 auto;
-  border: 1px solid transparent;
+  border-bottom: 3px solid #242424;
+}
+
+[class*='__block'] {
+  width: 50%;
+  display: inline-block;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 /* Разметка основных блоков КОНЕЦ */
+.nav {
+  position: fixed;
+  width: 100%;
+  max-width: inherit;
+  top: -1px;
+  z-index: 100;
+  background: black;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,18 +94,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 3px solid #252525;
+  border-bottom: 3px solid #242424;
 }
 
 .nav__item {
-  padding: 17px 32px;
+  padding: 18px 1%;
 }
 
 .nav__link {
   font-weight: 450;
   font-size: 16px;
   line-height: 21px;
-  color: #607B96;
+  color: #90CAF9;
   position: relative;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
@@ -100,7 +116,7 @@ body {
   display: block;
   width: 0%;
   height: 3px;
-  background: #34C759;
+  background: orange;
   position: absolute;
   top: 25px;
   -webkit-transition: all 1s ease 0s;
@@ -108,7 +124,7 @@ body {
 }
 
 .nav__link:hover {
-  color: white;
+  color: #E3F2FD;
 }
 
 .nav__link:hover::after {
@@ -116,14 +132,11 @@ body {
 }
 
 .home__container {
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 160px;
-  border-bottom: 3px solid #252525;
 }
 
 .home__block {
-  width: 50%;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -131,20 +144,20 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 24px;
-  color: #E5E9F0;
+  color: #E3F2FD;
 }
 
 .home__title {
   font-size: 62px;
   line-height: 81px;
-  color: #E5E9F0;
+  color: #E3F2FD;
 }
 
 .home__subtitle {
   font-weight: 450;
   font-size: 32px;
   line-height: 42px;
-  color: #4D5BCE;
+  color: #3F51B5;
   margin-bottom: 82px;
 }
 
@@ -153,14 +166,14 @@ body {
   font-weight: 450;
   font-size: 16px;
   line-height: 21px;
-  color: #607B96;
+  color: #E3F2FD;
 }
 
 .home__link {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #4D5BCE;
+  color: #90CAF9;
   position: relative;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
@@ -171,7 +184,7 @@ body {
   display: block;
   width: 0%;
   height: 3px;
-  background: #34C759;
+  background: orange;
   position: absolute;
   top: 25px;
   -webkit-transition: all 1s ease 0s;
@@ -179,7 +192,7 @@ body {
 }
 
 .home__link:hover {
-  color: white;
+  color: #E3F2FD;
 }
 
 .home__link:hover::after {
@@ -196,14 +209,11 @@ body {
 }
 
 .about__container {
-  padding-top: 100px;
+  padding-top: 140px;
   padding-bottom: 160px;
-  border-bottom: 3px solid #252525;
 }
 
 .about__block {
-  width: 50%;
-  display: inline-block;
   vertical-align: top;
 }
 
@@ -211,16 +221,15 @@ body {
   font-weight: 450;
   font-size: 32px;
   line-height: 42px;
-  color: #4D5BCE;
+  color: #3F51B5;
   margin-bottom: 82px;
 }
 
 .about__text {
-  padding-right: 20px;
   font-weight: 450;
   font-size: 18px;
   line-height: 150%;
-  color: #607B96;
+  color: #E3F2FD;
   text-align: justify;
 }
 
@@ -238,7 +247,7 @@ body {
   width: 255px;
   min-height: 200px;
   padding: 24px;
-  border: 3px solid #252525;
+  border: 3px solid #242424;
   border-radius: 6px;
   margin-bottom: 24px;
   text-align: center;
@@ -250,7 +259,7 @@ body {
   font-weight: 450;
   font-size: 18px;
   line-height: 150%;
-  color: #607B96;
+  color: #E3F2FD;
 }
 
 .card__title::before {
@@ -258,7 +267,7 @@ body {
   display: block;
   width: 50%;
   height: 3px;
-  background: #34C759;
+  background: orange;
   position: relative;
   top: -15px;
   left: 25%;
@@ -278,11 +287,12 @@ body {
 }
 
 .card:hover {
-  background: #34C759;
+  background: orange;
 }
 
 .card:hover .card__title {
-  color: white;
+  color: #E3F2FD;
+  color: black;
 }
 
 .card:hover .card__title::before {

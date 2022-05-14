@@ -1,14 +1,11 @@
 .home {
 
     &__container {
-        padding-top: 100px;
+        padding-top: 200px;
         padding-bottom: 160px;
-        border-bottom: 3px solid $border;
     }
 
     &__block {
-        width: 50%;
-        display: inline-block;
         vertical-align: middle;
     }
 
@@ -53,7 +50,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
-        color: $color-h2;
+        color: $color-link;
         position: relative;
         transition: all 1s ease 0s;
 

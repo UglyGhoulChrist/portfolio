@@ -3,16 +3,13 @@
     // .about__container
 
     &__container {
-        padding-top: 100px;
+        padding-top: 140px;
         padding-bottom: 160px;
-        border-bottom: 3px solid $border;
     }
 
     // .about__block
 
     &__block {
-        width: 50%;
-        display: inline-block;
         vertical-align: top;
     }
 
@@ -22,14 +19,13 @@
         font-weight: 450;
         font-size: 32px;
         line-height: 42px;
-        color:$color-h2;
+        color: $color-h2;
         margin-bottom: 82px;
     }
 
     // .about__text
 
     &__text {
-        padding-right: 20px;
         font-weight: 450;
         font-size: 18px;
         line-height: 150%;
@@ -96,11 +92,11 @@
 
 .card:hover {
     background: $color-link-after;
-
 }
 
 .card:hover .card__title {
     color: $color-link-hover;
+    color: $background-color;
 }
 
 .card:hover .card__title::before {
