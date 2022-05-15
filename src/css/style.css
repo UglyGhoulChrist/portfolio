@@ -420,6 +420,7 @@ body {
 }
 
 .form__button {
+  display: block;
   background: #242424;
   border-radius: 8px;
   padding: 10px 15px;
@@ -447,4 +448,3 @@ body {
 .code__item_green {
   color: #43D9AD;
 }
-/*# sourceMappingURL=style.css.map */

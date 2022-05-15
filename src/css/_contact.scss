@@ -49,6 +49,7 @@
     // .form__button
 
     &__button {
+        display: block;
         background:  $border;
         border-radius: 8px;
         padding: 10px 15px;
@@ -61,7 +62,7 @@
 
 .code {
 
-    &__list {}
+    // &__list {}
 
     &__item {
         font-weight: 450;

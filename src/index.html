@@ -126,14 +126,21 @@
                 <div class="contact__container">
                     <h2 class="contact__subtitle">&gt; Contacts</h2>
                     <div class="contact__block">
-                        <div class="form">form
-                            <div class="form__subtext">_name:</div>
-                            <div class="form__input"></div>
-                            <div class="form__subtext">_email:</div>
-                            <div class="form__input"></div>
-                            <div class="form__subtext">_message:</div>
-                            <div class="form__input"></div>
-                            <button class="form__button">submit-message</button>
+                        <div class="form">
+                            <form action="mailto:UglyGhoulChrist@gmail.com">
+                                <div class="form__subtext">_name:</div>
+                                <input class="form__input" type="text" name="name" placeholder="Ваше имя" id="name">
+
+                                <div class="form__subtext">_email:</div>
+                                <input class="form__input" type="email" name="email" placeholder="Ваш Email">
+
+                                <div class="form__subtext">_message:</div>
+                                <input class="form__input" type="textarea" name="message" placeholder="Ваше сообщение">
+
+                                <p style="font-size: 16px;"><input type="submit" class="btn btn-submit form__button">
+                                    submit-message
+                            </p>
+                            </form>
                         </div>
                     </div>
                     <div class="contact__block">
