@@ -27,9 +27,18 @@
 
 .form {
 
+    &__subtitle {
+        font-weight: 450;
+        font-size: 32px;
+        line-height: 42px;
+        color: $color-h2;
+        margin-bottom: 82px;
+    }
+
     // .form__subtext
 
     &__subtext {
+        display: block;
         font-weight: 450;
         font-size: 16px;
         line-height: 24px;
@@ -40,29 +49,43 @@
     // .form__input
 
     &__input {
+        display: block;
         margin-bottom: 24px;
         border: 1px solid $border;
         border-radius: 8px;
         padding: 10px 15px;
+        width: 70%;
+        transition: all .3s ease 0s;
+
+        &:hover {
+            outline: 3px solid $color-link-after;
+        }
     }
 
     // .form__button
 
     &__button {
         display: block;
-        background:  $border;
+        background: $border;
         border-radius: 8px;
         padding: 10px 15px;
         font-weight: 450;
         font-size: 16px;
         line-height: 24px;
         color: $color-text;
+        transition: all .3s ease 0s;
+
+        &:hover {
+            outline: 3px solid $color-link-after;
+        }
     }
 }
 
 .code {
 
-    // &__list {}
+    &__list {
+        counter-reset: item;
+    }
 
     &__item {
         font-weight: 450;
@@ -70,8 +93,16 @@
         line-height: 27px;
         color: $color-text;
 
+        &::before {
+            counter-increment: item;
+            content: counter(item);
+            display: inline-block;
+            margin-left: -30px;
+            width: 30px;
+        }
+
         &_pink {
-           color: $color-text-pink;
+            color: $color-text-pink;
         }
 
         &_violet {
@@ -83,10 +114,3 @@
         }
     }
 }
-
-
-
-
-
-
-
