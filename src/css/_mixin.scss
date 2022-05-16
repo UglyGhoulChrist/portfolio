@@ -1,7 +1,8 @@
 @mixin title {
-    font-size: 64px;
+    font-size: 58px;
     line-height: 81px;
     color: $color-h1;
+    margin-bottom: 30px;
     @media (max-width:600px) {
         font-size: 48px;  
     }
@@ -22,7 +23,7 @@
     font-size: 32px;
     line-height: 42px;
     color: $color-h2;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 @mixin text {

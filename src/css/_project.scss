@@ -1,7 +1,7 @@
 .project {
 
     &__container {
-        padding-top: 90px;
+        padding-top: 50px;
         padding-bottom: 50px;
         min-height: 100vh;
     }
@@ -33,6 +33,7 @@
 
     &__image {
         width: 100%;
+        border: 3px solid $border;
         border-radius: 5px;
     }
 }

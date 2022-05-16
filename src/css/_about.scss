@@ -1,7 +1,7 @@
 .about {
 
     &__container {
-        padding-top: 90px;
+        padding-top: 50px;
         padding-bottom: 50px;
         min-height: 100vh;
     }
@@ -69,11 +69,11 @@
     background: $color-link-after;
 }
 
-.card:hover .card__title {
+.card:hover .card__text {
     color: $color-link-hover;
     color: $background-color;
 }
 
-.card:hover .card__title::before {
+.card:hover .card__text::before {
     background: $background-color;
 }

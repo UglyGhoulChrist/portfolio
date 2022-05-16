@@ -1,7 +1,7 @@
 .contact {
 
     &__container {
-        padding-top: 90px;
+        padding-top: 50px;
         padding-bottom: 50px;
         min-height: 95vh;
     }
@@ -76,8 +76,8 @@
             counter-increment: item;
             content: counter(item);
             display: inline-block;
-            margin-left: -30px;
-            width: 30px;
+            width: 25px;
+
         }
 
         &_pink {
