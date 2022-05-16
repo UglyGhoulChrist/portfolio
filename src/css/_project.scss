@@ -2,16 +2,12 @@
 
     &__container {
         padding-top: 90px;
-        padding-bottom: 86px;
+        padding-bottom: 50px;
         min-height: 100vh;
     }
 
     &__subtitle {
-        font-weight: 450;
-        font-size: 32px;
-        line-height: 42px;
-        color: $color-h2;
-        margin-bottom: 82px;
+        @include subtitle;
     }
 
     &__block {
@@ -20,45 +16,15 @@
     }
 
     &__text {
-        font-weight: 450;
-        font-size: 18px;
-        line-height: 27px;
-        color: $color-text;
+        @include text;
     }
 
     &__subtext {
-        font-weight: 450;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-text;
+        @include subtext;
     }
 
     &__link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-link;
-        position: relative;
-        transition: all 1s ease 0s;
-
-        &::after {
-            content: '';
-            display: block;
-            width: 0%;
-            height: 3px;
-            background: $color-link-after;
-            position: absolute;
-            top: 25px;
-            transition: all 1s ease 0s;
-        }
-
-        &:hover {
-            color: $color-link-hover;
-
-            &::after {
-                width: 100%;
-            }
-        }
+        @include link;
     }
 
     &__picture {

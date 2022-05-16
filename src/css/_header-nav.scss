@@ -1,5 +1,4 @@
-.header {
-}
+.header {}
 
 .nav {
     position: fixed;
@@ -21,30 +20,9 @@
     }
 
     &__link {
+        @include link;
         font-weight: 450;
         font-size: 16px;
         line-height: 21px;
-        color: $color-link;
-        position: relative;
-        transition: all 1s ease 0s;
-
-        &::after {
-            content: '';
-            display: block;
-            width: 0%;
-            height: 3px;
-            background: $color-link-after ;
-            position: absolute;
-            top: 25px;
-            transition: all 1s ease 0s;
-        }
-
-        &:hover {
-            color: $color-link-hover;
-
-            &::after {
-                width: 100%;
-            }
-        }
     }
 }

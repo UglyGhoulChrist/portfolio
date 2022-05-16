@@ -1,36 +1,31 @@
 .footer {
 
-    // .footer__container
-
     &__container {
-        min-height: 10vh;
+        min-height: 5vh;
     }
 
-    // .footer__list
+    &__block {
+        vertical-align: middle;
+    }
 
     &__list {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+         text-align: right;
     }
-
-    // .footer__item
 
     &__item {
-        padding:5px 10px;
-      
+        display: inline-block;
+        padding: 5px 10px;
+
+        &:last-child{
+            padding-right: 0;
+        }
     }
 
-    // .footer__link
-
     &__link {
-        display: inline-block;
         font-weight: 450;
         font-size: 16px;
-        line-height: 48px;
         color: $color-link;
-        transition: all .5s ease 0s;
+        transition: all .3s ease 0s;
 
         &:hover {
             text-shadow: 0px 0px 12px $color-link-after;
@@ -38,13 +33,11 @@
         }
     }
 
-    // .footer__icon
-
     &__icon {
         width: 48px;
         height: 48px;
         border-radius: 15px;
-        transition: all .5s ease 0s;
+        transition: all .3s ease 0s;
 
         &:hover {
             box-shadow: 0px 0px 24px 0px $color-link-after_alfa;
@@ -54,6 +47,5 @@
 
     &__img {
         width: 100%;
-        background: none;
     }
 }

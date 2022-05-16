@@ -1,3 +1,69 @@
-@mixin name {
-    
+@mixin title {
+    font-size: 62px;
+    line-height: 81px;
+    color: $color-h1;
+}
+
+
+@mixin subtitle {
+    font-weight: 450;
+    font-size: 32px;
+    line-height: 42px;
+    color: $color-h2;
+    margin-bottom: 70px;
+}
+
+@mixin text {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-text;
+}
+
+
+@mixin subtext {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text;
+}
+
+@mixin link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-link;
+    position: relative;
+    transition: all .5s ease 0s;
+
+    &_violet {
+        color: $color-text-violet;
+    }
+
+    &_green {
+        color: $color-text-green;
+    }
+
+    &_pink {
+        color: $color-text-pink;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 3px;
+        background: $color-link-after;
+        position: absolute;
+        top: 25px;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: $color-link-hover;
+
+        &::after {
+            width: 100%;
+        }
+    }
 }

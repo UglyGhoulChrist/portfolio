@@ -1,24 +1,14 @@
 .contact {
 
-    // .contact__container
-
     &__container {
         padding-top: 90px;
-        padding-bottom: 86px;
-        min-height: 90vh;
+        padding-bottom: 50px;
+        min-height: 95vh;
     }
-
-    // .contact__subtitle
 
     &__subtitle {
-        font-weight: 450;
-        font-size: 32px;
-        line-height: 42px;
-        color: $color-h2;
-        margin-bottom: 82px;
+        @include subtitle;
     }
-
-    // .contact__block
 
     &__block {
         vertical-align: top;
@@ -28,25 +18,14 @@
 .form {
 
     &__subtitle {
-        font-weight: 450;
-        font-size: 32px;
-        line-height: 42px;
-        color: $color-h2;
-        margin-bottom: 82px;
+        @include subtitle;
     }
-
-    // .form__subtext
 
     &__subtext {
         display: block;
-        font-weight: 450;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-text;
+        @include subtext;
         margin-bottom: 10px;
     }
-
-    // .form__input
 
     &__input {
         display: block;
@@ -62,8 +41,6 @@
             box-shadow: 0px 0px 16px 0px $color-link-after_alfa;
         }
     }
-
-    // .form__button
 
     &__button {
         display: block;
