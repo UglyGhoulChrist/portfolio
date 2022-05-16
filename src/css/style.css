@@ -389,7 +389,7 @@ body {
 .contact__container {
   padding-top: 90px;
   padding-bottom: 86px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .contact__subtitle {
@@ -488,20 +488,26 @@ body {
   color: #43D9AD;
 }
 
+.footer__container {
+  min-height: 10vh;
+}
+
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 3px solid #242424;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__item {
-  padding: 18px 1%;
+  padding: 5px 10px;
 }
 
 .footer__link {
