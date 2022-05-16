@@ -1,7 +1,19 @@
 @mixin title {
-    font-size: 62px;
+    font-size: 64px;
     line-height: 81px;
     color: $color-h1;
+    @media (max-width:600px) {
+        font-size: 48px;  
+    }
+    @media (max-width:450px) {
+        font-size: 42px;  
+    }
+    @media (max-width:400px) {
+        font-size: 38px;  
+    }
+    @media (max-width:360px) {
+        font-size: 34px;  
+    }
 }
 
 
@@ -35,6 +47,10 @@
     color: $color-link;
     position: relative;
     transition: all .5s ease 0s;
+
+    @media (max-width:400px) {
+        font-size: 12px;
+    }
 
     &_violet {
         color: $color-text-violet;

@@ -76,6 +76,13 @@ body {
   padding-right: 1%;
 }
 
+@media (max-width: 1060px) {
+  [class*='__block'] {
+    display: block;
+    width: 100%;
+  }
+}
+
 /* Разметка основных блоков КОНЕЦ */
 .nav {
   position: fixed;
@@ -115,6 +122,12 @@ body {
   line-height: 21px;
 }
 
+@media (max-width: 400px) {
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
 .nav__link_violet {
   color: #4D5BCE;
 }
@@ -147,6 +160,12 @@ body {
   width: 100%;
 }
 
+@media (max-width: 540px) {
+  .nav__item:first-child {
+    display: none;
+  }
+}
+
 .home__container {
   padding-top: 150px;
   padding-bottom: 50px;
@@ -165,9 +184,33 @@ body {
 }
 
 .home__title {
-  font-size: 62px;
+  font-size: 64px;
   line-height: 81px;
   color: #E3F2FD;
+}
+
+@media (max-width: 600px) {
+  .home__title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 360px) {
+  .home__title {
+    font-size: 34px;
+  }
 }
 
 .home__subtitle {
@@ -193,6 +236,12 @@ body {
   position: relative;
   -webkit-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+}
+
+@media (max-width: 400px) {
+  .home__link {
+    font-size: 12px;
+  }
 }
 
 .home__link_violet {
@@ -372,6 +421,12 @@ body {
   transition: all .5s ease 0s;
 }
 
+@media (max-width: 400px) {
+  .project__link {
+    font-size: 12px;
+  }
+}
+
 .project__link_violet {
   color: #4D5BCE;
 }
@@ -539,6 +594,7 @@ body {
 .footer__link {
   font-weight: 450;
   font-size: 16px;
+  line-height: 58px;
   color: #90CAF9;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
@@ -567,4 +623,3 @@ body {
 .footer__img {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */

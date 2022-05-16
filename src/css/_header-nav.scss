@@ -25,4 +25,11 @@
         font-size: 16px;
         line-height: 21px;
     }
+
+    &__item:first-child{
+        @media (max-width:540px) {
+            display: none;
+            
+        }
+    }
 }
