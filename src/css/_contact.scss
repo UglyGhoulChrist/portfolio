@@ -58,7 +58,8 @@
         transition: all .3s ease 0s;
 
         &:hover {
-            outline: 3px solid $color-link-after;
+            box-shadow: 0px 0px 24px 0px $color-link-after_alfa;
+            box-shadow: 0px 0px 16px 0px $color-link-after_alfa;
         }
     }
 
@@ -76,7 +77,8 @@
         transition: all .3s ease 0s;
 
         &:hover {
-            outline: 3px solid $color-link-after;
+            text-shadow: 0px 0px 12px $color-link-after;
+            text-shadow: 0px 0px 8px $color-link-after;
         }
     }
 }
