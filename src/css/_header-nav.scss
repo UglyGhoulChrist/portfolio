@@ -27,9 +27,8 @@
     }
 
     &__item:first-child{
-        @media (max-width:540px) {
+        @media (max-width:570px) {
             display: none;
-            
         }
     }
 }

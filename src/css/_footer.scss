@@ -2,6 +2,16 @@
 
     &__container {
         min-height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1%;
+        padding-right: 1%;
+
+        @media (max-width:570px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__block {
@@ -9,14 +19,18 @@
     }
 
     &__list {
-         text-align: right;
+        text-align: right;
+
+        @media (max-width:570px) {
+            text-align: center;
+        }
     }
 
     &__item {
         display: inline-block;
         padding: 5px 10px;
 
-        &:last-child{
+        &:last-child {
             padding-right: 0;
         }
     }
