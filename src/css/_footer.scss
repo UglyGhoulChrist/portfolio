@@ -2,33 +2,29 @@
 
     &__container {
         min-height: 5vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding-left: 1%;
         padding-right: 1%;
-
-        @media (max-width:570px) {
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-    }
-
-    &__block {
-        vertical-align: middle;
     }
 
     &__list {
-        text-align: right;
-
-        @media (max-width:570px) {
-            text-align: center;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     &__item {
-        display: inline-block;
         padding: 5px 10px;
+
+        &:first-child {
+            padding-left: 0;
+            flex: 1 1 auto;
+
+            @media (max-width:570px) {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+        }
 
         &:last-child {
             padding-right: 0;
