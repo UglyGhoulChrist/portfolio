@@ -1,13 +1,23 @@
 .home {
 
     &__container {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding: 100px 1% 50px 1%;
         min-height: 100vh;
+        display: flex;
+        align-content: flex-start;
+        gap: 40px;
+
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+        }
     }
 
-    &__block {
-        vertical-align: middle;
+    &__hi {
+        flex: 0 1 550px;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
     }
 
     &__text {
@@ -30,9 +40,7 @@
         @include link;
     }
 
-    &__picture {
-        max-width: 569px;
-    }
+    &__picture {}
 
     &__image {
         width: 100%;

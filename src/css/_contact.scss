@@ -3,6 +3,7 @@
         padding: 100px 1% 50px 1%;
         min-height: 90vh;
         display: flex;
+        align-content: flex-start;
         gap: 40px;
 
         @media (max-width:768px) {

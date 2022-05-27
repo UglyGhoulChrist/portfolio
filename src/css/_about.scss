@@ -1,13 +1,31 @@
 .about {
 
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 100px 1% 50px 1%;
         min-height: 100vh;
+        display: flex;
+        align-content: flex-start;
+        gap: 40px;
+
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+        }
     }
 
-    &__block {
-        vertical-align: top;
+    &__personal {
+        flex: 0 1 550px;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__skills {
+        flex: 0 1 550px;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
     }
 
     &__subtitle {

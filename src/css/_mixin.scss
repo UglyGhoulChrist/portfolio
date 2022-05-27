@@ -1,11 +1,9 @@
 @mixin title {
-    font-size: 58px;
-    line-height: 81px;
+    font-size: 48px;
+    line-height: 1.5;
     color: $color-h1;
     margin-bottom: 30px;
-    @media (max-width:600px) {
-        font-size: 48px;  
-    }
+
     @media (max-width:450px) {
         font-size: 42px;  
     }
