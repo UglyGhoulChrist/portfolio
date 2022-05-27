@@ -1,21 +1,22 @@
 .contact {
-
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px 1%;
         min-height: 95vh;
-    }
+        display: flex;
+        gap: 40px;
 
-    &__subtitle {
-        @include subtitle;
-    }
-
-    &__block {
-        vertical-align: top;
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+        }
     }
 }
 
 .form {
+    flex: 0 1 550px;
+
+    @media (max-width:768px) {
+        flex: 0 1 100%;
+    }
 
     &__subtitle {
         @include subtitle;
@@ -33,7 +34,7 @@
         border: 1px solid $border;
         border-radius: 8px;
         padding: 10px 15px;
-        width: 50%;
+        width: 70%;
         transition: all .3s ease 0s;
 
         &_message {
@@ -66,6 +67,15 @@
 }
 
 .code {
+    flex: 0 1 550px;
+
+    @media (max-width:768px) {
+        flex: 0 1 100%;
+    }
+
+    &__subtitle {
+        @include subtitle;
+    }
 
     &__list {
         counter-reset: item;
@@ -82,7 +92,6 @@
             content: counter(item);
             display: inline-block;
             width: 25px;
-
         }
 
         &_pink {
