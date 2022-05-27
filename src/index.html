@@ -129,23 +129,21 @@
             <section class="contact" id="contact">
                 <div class="contact__container">
                     <div class="contact__block">
-                        <div class="form">
-                            <form action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
-                                <fieldset>
-                                    <legend class="form__subtitle">&gt; Write me</legend>
-                                    <label for="name" class="form__subtext">_name:</label>
-                                    <input class="form__input" maxlength="40" type="text" name="name"
-                                        placeholder="Ваше имя" id="name">
-                                    <label for="email" class="form__subtext">_email:</label>
-                                    <input class="form__input" maxlength="40" type="email" name="email"
-                                        placeholder="Ваш Email" id="email">
-                                    <label for="message" class="form__subtext">_message:</label>
-                                    <input class="form__input" maxlength="1000" type="textarea" name="message"
-                                        placeholder="Ваше сообщение" id="message">
-                                </fieldset>
-                                <button type="submit" class="form__button">submit-message</button>
-                            </form>
-                        </div>
+                        <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+                            <fieldset>
+                                <legend class="form__subtitle">&gt; Write me</legend>
+                                <label for="name" class="form__subtext">_name:</label>
+                                <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
+                                    id="name">
+                                <label for="email" class="form__subtext">_email:</label>
+                                <input class="form__input" maxlength="40" type="email" name="email"
+                                    placeholder="Ваш Email" id="email">
+                                <label for="message" class="form__subtext">_message:</label>
+                                <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
+                                    id="message"></textarea>
+                            </fieldset>
+                            <button type="submit" class="form__button">submit-message</button>
+                        </form>
                     </div>
                     <div class="contact__block">
                         <h2 class="contact__subtitle">&gt; Contacts</h2>

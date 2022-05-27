@@ -33,8 +33,13 @@
         border: 1px solid $border;
         border-radius: 8px;
         padding: 10px 15px;
-        width: 70%;
+        width: 50%;
         transition: all .3s ease 0s;
+
+        &_message {
+            height: 100px;
+            resize: none;
+        }
 
         &:hover {
             box-shadow: 0px 0px 24px 0px $color-link-after_alfa;

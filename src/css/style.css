@@ -514,9 +514,14 @@ body {
   border: 1px solid #242424;
   border-radius: 8px;
   padding: 10px 15px;
-  width: 70%;
+  width: 50%;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+}
+
+.form__input_message {
+  height: 100px;
+  resize: none;
 }
 
 .form__input:hover {
@@ -650,3 +655,4 @@ body {
 .footer__img {
   width: 100%;
 }
+/*# sourceMappingURL=style.css.map */
