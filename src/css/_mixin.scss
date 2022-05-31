@@ -5,13 +5,15 @@
     margin-bottom: 30px;
 
     @media (max-width:450px) {
-        font-size: 42px;  
+        font-size: 42px;
     }
+
     @media (max-width:400px) {
-        font-size: 38px;  
+        font-size: 38px;
     }
+
     @media (max-width:360px) {
-        font-size: 34px;  
+        font-size: 34px;
     }
 }
 
@@ -46,13 +48,6 @@
     position: relative;
     transition: all .5s ease 0s;
 
-    @media (max-width:450px) {
-        font-size: 12px;
-    }
-    @media (max-width:400px) {
-        font-size: 11px;
-    }
-
     &_violet {
         color: $color-text-violet;
     }
@@ -63,6 +58,41 @@
 
     &_pink {
         color: $color-text-pink;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 3px;
+        background: $color-link-after;
+        position: absolute;
+        top: 25px;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: $color-link-hover;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+
+// TODO удалить как будет готов бургер
+// Заглянуть в Header-Nav
+@mixin link-fz12 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-link;
+    position: relative;
+    transition: all .5s ease 0s;
+
+    @media (max-width:450px) {
+        font-size: 12px;
     }
 
     &::after {

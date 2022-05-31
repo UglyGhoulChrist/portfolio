@@ -12,6 +12,11 @@
         }
     }
 
+    &__subtitle {
+        @include subtitle;
+        flex: 0 1 100%;
+    }
+
     &__text {
         flex: 0 1 50%;
 
@@ -20,12 +25,9 @@
         }
     }
 
-    &__subtitle {
-        @include subtitle;
-    }
-
     &__subtext {
         @include subtext;
+        margin-bottom: 10px;
     }
 
     &__link {

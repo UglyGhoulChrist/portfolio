@@ -12,6 +12,7 @@
         }
     }
 
+    // Левый блок
     &__hi {
         flex: 0 1 50%;
 
@@ -34,12 +35,15 @@
 
     &__subtext {
         @include subtext;
+        margin-bottom: 10px;
     }
 
     &__link {
         @include link;
+        margin-bottom: 20px;
     }
 
+    // Правый блок
     &__picture {
         flex: 0 1 50%;
 
