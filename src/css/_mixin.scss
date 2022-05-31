@@ -17,23 +17,22 @@
 
 
 @mixin subtitle {
-    font-weight: 450;
+    font-weight: 500;
     font-size: 32px;
-    line-height: 42px;
+    line-height: 1.33;
     color: $color-h2;
     margin-bottom: 50px;
 }
 
 @mixin text {
-    font-weight: 450;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
     color: $color-text;
 }
 
-
 @mixin subtext {
-    font-weight: 450;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: $color-text;
@@ -42,13 +41,16 @@
 @mixin link {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $color-link;
     position: relative;
     transition: all .5s ease 0s;
 
-    @media (max-width:400px) {
+    @media (max-width:450px) {
         font-size: 12px;
+    }
+    @media (max-width:400px) {
+        font-size: 11px;
     }
 
     &_violet {

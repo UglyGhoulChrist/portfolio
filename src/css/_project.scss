@@ -12,6 +12,14 @@
         }
     }
 
+    &__text {
+        flex: 0 1 50%;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
+    }
+
     &__subtitle {
         @include subtitle;
     }
@@ -22,6 +30,14 @@
 
     &__link {
         @include link;
+    }
+
+    &__picture {
+        flex: 0 1 50%;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
     }
 
     &__image {

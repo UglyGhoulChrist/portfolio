@@ -13,7 +13,7 @@
     }
 
     &__hi {
-        flex: 0 1 550px;
+        flex: 0 1 50%;
 
         @media (max-width:768px) {
             flex: 0 1 100%;
@@ -40,7 +40,13 @@
         @include link;
     }
 
-    &__picture {}
+    &__picture {
+        flex: 0 1 50%;
+
+        @media (max-width:768px) {
+            flex: 0 1 100%;
+        }
+    }
 
     &__image {
         width: 100%;

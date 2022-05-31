@@ -13,7 +13,7 @@
 }
 
 .form {
-    flex: 0 1 550px;
+    flex: 0 1 50%;
 
     @media (max-width:768px) {
         flex: 0 1 100%;
@@ -68,7 +68,7 @@
 }
 
 .code {
-    flex: 0 1 550px;
+    flex: 0 1 50%px;
 
     @media (max-width:768px) {
         flex: 0 1 100%;
@@ -83,9 +83,9 @@
     }
 
     &__item {
-        font-weight: 450;
+        font-weight: 500;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         color: $color-text;
 
         &::before {

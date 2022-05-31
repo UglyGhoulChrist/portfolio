@@ -13,7 +13,7 @@
     }
 
     &__personal {
-        flex: 0 1 550px;
+        flex: 0 1 50%;
 
         @media (max-width:768px) {
             flex: 0 1 100%;
@@ -21,7 +21,7 @@
     }
 
     &__skills {
-        flex: 0 1 550px;
+        flex: 0 1 50%;
 
         @media (max-width:768px) {
             flex: 0 1 100%;

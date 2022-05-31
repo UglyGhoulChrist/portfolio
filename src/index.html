@@ -38,8 +38,8 @@
                         <h2 class="home__subtitle">&gt; Front-end developer</h2>
                         <!-- <div class="home__subtext">// complete the game to continue</div> -->
                         <div class="home__subtext">// all my projects on Github</div>
-                        <a href="https://github.com/UglyGhoulChrist" target="_blank" class="home__link"><span
-                                class="home__link_violet"></span>https://<span
+                        <a href="https://github.com/UglyGhoulChrist" target="_blank" class="home__link">
+                            <span class="home__link_violet">https://</span><span
                                 class="home__link_green">github.com/</span><span
                                 class="home__link_pink">UglyGhoulChrist</span></a>
                     </div>
@@ -112,7 +112,10 @@
                         <h2 class="project__subtitle">&gt; Portfolio website</h2>
                         <div class="project__subtext">My first project</div>
                         <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
-                            class="project__link">https://github.com/UglyGhoulChrist/portfolio</a>
+                            class="project__link"><span class="home__link_violet">https://</span><span
+                                class="home__link_green">github.com/</span><span
+                                class="home__link_pink">UglyGhoulChrist</span><span
+                                class="home__link_violet">/portfolio</span></a>
                     </div>
                     <div class="project__picture">
                         <img src="img/my-project/my-first-project.webp" alt="first project" class="project__image">
@@ -123,18 +126,16 @@
             <section class="contact" id="contact">
                 <div class="contact__container">
                     <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
-                        <fieldset>
-                            <legend class="form__subtitle">&gt; Write me</legend>
-                            <label for="name" class="form__subtext">_name:</label>
-                            <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
-                                id="name">
-                            <label for="email" class="form__subtext">_email:</label>
-                            <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                                id="email">
-                            <label for="message" class="form__subtext">_message:</label>
-                            <textarea class="form__input form__input_message" name="message"
-                                placeholder="Ваше сообщение" id="message"></textarea>
-                        </fieldset>
+                        <h2 class="form__subtitle">&gt; Write me</h2>
+                        <label for="name" class="form__subtext">_name:</label>
+                        <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
+                            id="name">
+                        <label for="email" class="form__subtext">_email:</label>
+                        <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
+                            id="email">
+                        <label for="message" class="form__subtext">_message:</label>
+                        <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
+                            id="message"></textarea>
                         <button type="submit" class="form__button">submit-message</button>
                     </form>
                     <div class="code">

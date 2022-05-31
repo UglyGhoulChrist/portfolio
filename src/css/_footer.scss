@@ -17,22 +17,27 @@
         padding: 5px 10px;
 
         &:first-child {
-            padding-left: 0;
             flex: 1 1 auto;
+            padding-left: 0px;
 
             @media (max-width:570px) {
                 flex: 0 0 100%;
                 text-align: center;
+                padding-right: 0px;
             }
         }
 
         &:last-child {
-            padding-right: 0;
+            padding-right: 0px;
+
+            @media (max-width:570px) {
+                padding-right: 10px;
+            }
         }
     }
 
     &__link {
-        font-weight: 450;
+        font-weight: 500;
         font-size: 16px;
         line-height: 58px;
         color: $color-link;
