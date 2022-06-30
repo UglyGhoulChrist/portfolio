@@ -1,28 +1,19 @@
 .project {
+    min-height: 100vh;
+    padding: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 
-    &__container {
-        padding: 100px 1% 50px 1%;
-        min-height: 100vh;
-        display: flex;
-        align-content: flex-start;
-        gap: 40px;
-
-        @media (max-width:768px) {
-            flex-wrap: wrap;
-        }
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
     }
 
     &__subtitle {
         @include subtitle;
-        flex: 0 1 100%;
     }
 
     &__text {
-        flex: 0 1 50%;
-
-        @media (max-width:768px) {
-            flex: 0 1 100%;
-        }
     }
 
     &__subtext {
@@ -31,15 +22,11 @@
     }
 
     &__link {
-        @include link;
+        @include link-fz12;
+        // @include link;
     }
 
     &__picture {
-        flex: 0 1 50%;
-
-        @media (max-width:768px) {
-            flex: 0 1 100%;
-        }
     }
 
     &__image {

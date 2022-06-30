@@ -1,23 +1,17 @@
 .contact {
-    &__container {
-        padding: 100px 1% 50px 1%;
-        min-height: 90vh;
-        display: flex;
-        align-content: flex-start;
-        gap: 40px;
+    min-height: 90vh;
+    padding: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 
-        @media (max-width:768px) {
-            flex-wrap: wrap;
-        }
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
     }
+
 }
 
 .form {
-    flex: 0 1 50%;
-
-    @media (max-width:768px) {
-        flex: 0 1 100%;
-    }
 
     &__subtitle {
         @include subtitle;
@@ -50,10 +44,12 @@
     }
 
     &__button {
+        cursor: pointer;
         display: block;
         background: $border;
         border-radius: 8px;
         padding: 10px 15px;
+        text-transform: uppercase;
         font-weight: 450;
         font-size: 16px;
         line-height: 24px;
@@ -68,11 +64,6 @@
 }
 
 .code {
-    flex: 0 1 50%px;
-
-    @media (max-width:768px) {
-        flex: 0 1 100%;
-    }
 
     &__subtitle {
         @include subtitle;

@@ -6,212 +6,195 @@
     <!-- Поддержка браузера IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Front-end developer UglyGhoulChrist's portfolio site">
+    <meta name="description" content="Сайт-портфолио фронтенд разработчика UglyGhoulChrist">
     <meta name="author" content="UglyGhoulChrist@gmail.com">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Front-end developer UglyGhoulChrist's portfolio site</title>
+    <title>Сайт-портфолио фронтенд разработчика UglyGhoulChrist</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header" id="header">
-            <div class="header__container">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#header" class="nav__link">UglyGhoulChrist</a></li>
-                        <li class="nav__item"><a href="#home" class="nav__link">_hello</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">_about-me</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link">_my-projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">_contact-me</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="header __container" id="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">UglyGhoulChrist</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">_привет</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">_обо мне</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">_мои проекты</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">_контакты</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main">
-            <section class="home" id="home">
-                <div class="home__container">
-                    <div class="home__hi">
-                        <div class="home__text">Hello all. I am</div>
-                        <h1 class="home__title">UglyGhoulChrist</h1>
-                        <h2 class="home__subtitle">&gt; Front-end developer</h2>
-                        <div class="home__subtext">My projects:</div>
-                        <a href="https://github.com/UglyGhoulChrist" target="_blank" class="home__link">
-                            <span class="home__link_violet">// all my </span>
-                            <span class="home__link_green">projects </span>
-                            <span class="home__link_pink">on Github</span></a>
-                    </div>
-                    <div class="home__picture">
-                        <img src="img/home/image.webp" alt="Gadjets" class="home__image">
-                    </div>
+            <section class="home __container" id="home">
+                <div class="home__hi">
+                    <div class="home__text">Привет. Меня зовут</div>
+                    <h1 class="home__title">UglyGhoulChrist</h1>
+                    <h2 class="home__subtitle">&gt; Я учусь на фронтенд разработчика</h2>
+                    <div class="home__subtext">Мои проекты:</div>
+                    <a href="https://github.com/UglyGhoulChrist" target="_blank" class="home__link">
+                        <span class="home__link_violet">// все мои </span>
+                        <span class="home__link_green">проекты </span>
+                        <span class="home__link_pink">на Github</span></a>
+                </div>
+                <div class="home__picture">
+                    <img src="img/home/image.webp" alt="Gadjets" class="home__image">
                 </div>
             </section>
 
-            <section class="about" id="about">
-                <div class="about__container">
-                    <div class="about__personal">
-                        <h2 class="about__subtitle">&gt; personal-info</h2>
-                        <div class="about__text">
-                            * About me <br>
-                            * I am just learning<br>
-                            * development lorem ipsum dolor sit amet,<br>
-                            * consectetur adipiscing elit, sed do eiusmod<br>
-                            * tempor incididunt ut labore et dolore<br>
-                            * magna aliqua. Ut enim ad minim veniam,<br>
-                            * quis nostrud exercitation ullamco laboris<br>
-                            * nisi ut aliquip ex ea commodo consequat.<br>
-                            * Duis aute irure dolor in reprehenderit in<br>
-                            *<br>
-                            * Duis aute irure dolor in reprehenderit in<br>
-                            * voluptate velit esse cillum dolore eu fugiat<br>
-                            * nulla pariatur. Excepteur sint occaecat<br>
-                            * officia deserunt mollit anim id est laborum.<br>
-                            *</div>
+            <section class="about __container" id="about">
+                <div class="about__personal">
+                    <h2 class="about__subtitle">&gt; Немного обо мне:</h2>
+                    <div class="about__text">
+                        * Хочу получить новые знания.<br>* Пока это хобби.<br>
+                        * Но готов рассмотреть предложения.<br>* <br>* <br>
                     </div>
-                    <div class="about__skills">
-                        <h2 class="about__subtitle">&gt; skills</h2>
-                        <ul class="about__list">
-                            <li class="card">
-                                <div class="card__picture">
-                                    <img src="img/about/html.svg" alt="Html" class="card__image">
-                                </div>
-                                <!-- <div class="card__text">Семантическая разметка кода</div> -->
-                                <div class="card__text">Semantic code markup</div>
-                            </li>
-                            <li class="card">
-                                <div class="card__picture">
-                                    <img src="img/about/css.svg" alt="Css" class="card__image">
-                                </div>
-                                <!-- <div class="card__text">Стилизация элементов на странице</div> -->
-                                <div class="card__text">Styling elements on the page</div>
-                            </li>
-                            <li class="card">
-                                <div class="card__picture">
-                                    <img src="img/about/sass.svg" alt="Saas" class="card__image">
-                                </div>
-                                <!-- <div class="card__text">Быстрое написание стилей</div> -->
-                                <div class="card__text">Quick style writing</div>
-                            </li>
-                            <li class="card">
-                                <div class="card__picture">
-                                    <img src="img/about/figma.svg" alt="Figma" class="card__image">
-                                </div>
-                                <!-- <div class="card__text">Верстка сайта по макету Figma</div> -->
-                                <div class="card__text">Site layout according to the Figma layout</div>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="about__skills">
+                    <h2 class="about__subtitle">&gt; Мои навыки:</h2>
+                    <ul class="about__list">
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/html.svg" alt="Html" class="card__image">
+                            </div>
+                            <div class="card__text">Семантическая разметка кода</div>
+                        </li>
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/css.svg" alt="Css" class="card__image">
+                            </div>
+                            <div class="card__text">Стилизация элементов на странице</div>
+                        </li>
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/sass.svg" alt="Saas" class="card__image">
+                            </div>
+                            <div class="card__text">Быстрое написание стилей</div>
+                        </li>
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/figma.svg" alt="Figma" class="card__image">
+                            </div>
+                            <div class="card__text">Верстка сайта по макету Figma</div>
+                        </li>
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/python.svg" alt="Python" class="card__image">
+                            </div>
+                            <div class="card__text">Язык программирования общего назначения</div>
+                        </li>
+                        <li class="card">
+                            <div class="card__picture">
+                                <img src="img/about/django.svg" alt="Django" class="card__image">
+                            </div>
+                            <div class="card__text">Пока только изучаю</div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <section class="project" id="project">
-                <div class="project__container">
-                    <div class="project__text">
-                        <h2 class="project__subtitle">&gt; Portfolio website</h2>
-                        <div class="project__subtext">My first project</div>
-                        <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
-                            class="project__link"><span class="home__link_violet">https://</span><span
-                                class="home__link_green">github.com/</span><span class="home__link_pink">...</span><span
-                                class="home__link_violet">/portfolio</span></a>
-                    </div>
-                    <div class="project__picture">
-                        <img src="img/my-project/my-first-project.webp" alt="first project" class="project__image">
-                    </div>
+            <section class="project __container" id="project">
+                <div class="project__text">
+                    <h2 class="project__subtitle">&gt; Сайт-портфолио</h2>
+                    <div class="project__subtext">Проект создаётся в процессе обучения.</div>
+                    <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank" class="project__link"><span
+                            class="home__link_violet">https://</span><span
+                            class="home__link_green">github.com/</span><span class="home__link_pink">...</span><span
+                            class="home__link_violet">/portfolio</span></a>
+                </div>
+                <div class="project__picture">
+                    <img src="img/my-project/my-first-project.webp" alt="first project" class="project__image">
                 </div>
             </section>
 
-            <section class="contact" id="contact">
-                <div class="contact__container">
-                    <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
-                        <h2 class="form__subtitle">&gt; Write me</h2>
-                        <label for="name" class="form__subtext">_name:</label>
-                        <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
-                            id="name">
-                        <label for="email" class="form__subtext">_email:</label>
-                        <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                            id="email">
-                        <label for="message" class="form__subtext">_message:</label>
-                        <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
-                            id="message"></textarea>
-                        <button type="submit" class="form__button">submit-message</button>
-                    </form>
-                    <div class="code">
-                        <h2 class="code__subtitle">&gt; Contacts</h2>
-                        <ul class="code__list">
-                            <li class="code__item"><span class="code__item_pink">const </span><span
-                                    class="code__item_violet">button </span><span class="code__item_pink">=
-                                </span><span class="code__item_violet">document.querySelector </span>( <span
-                                    class="code__item_green">'#sendBtn' </span>);</li>
-                            <li class="code__item"></li>
-                            <li class="code__item"><span class="code__item_pink">const </span><span
-                                    class="code__item_violet">message </span><span class="code__item_pink">=
-                                </span>{</li>
-                            <li class="code__item"><span class="code__item_violet"> name</span>
-                                : <span class="code__item_green">"Jonathan Davis"</span>, </li>
-                            <li class="code__item">
-                                <span class="code__item_violet"> email</span>
-                                : <span class="code__item_green">""</span>,
-                            </li>
-                            <li class="code__item">
-                                <span class="code__item_violet"> message</span>
-                                : <span class="code__item_green">""</span>,
-                            </li>
-                            <li class="code__item"> date: <span class="code__item_green">"Thu 21 Apr"</span></li>
-                            <li class="code__item">}</li>
-                            <li class="code__item"></li>
-                            <li class="code__item">
-                                <span class="code__item_violet">button.addEventListener</span>(
-                                <span class="code__item_green">'click'</span>, ()
-                                <span class="code__item_green"> =&gt;</span> {
-                            </li>
-                            <li class="code__item">
-                                <span class="code__item_violet"> form.send</span>(<span class="code__item_violet">
-                                    message</span> );
-                            </li>
-                            <li class="code__item">})</li>
-                        </ul>
-                    </div>
+            <section class="contact __container" id="contact">
+                <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+                    <h2 class="form__subtitle">&gt; Напишите мне</h2>
+                    <label for="name" class="form__subtext">_Ваше имя:</label>
+                    <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя" id="name">
+                    <label for="email" class="form__subtext">_Ваша почта:</label>
+                    <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
+                        id="email">
+                    <label for="message" class="form__subtext">_Ваше сообщение:</label>
+                    <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
+                        id="message"></textarea>
+                    <button type="submit" class="form__button">отправить</button>
+                </form>
+                <div class="code">
+                    <h2 class="code__subtitle">&gt; Java Script</h2>
+                    <ul class="code__list">
+                        <li class="code__item"><span class="code__item_pink">const </span><span
+                                class="code__item_violet">button </span><span class="code__item_pink">=
+                            </span><span class="code__item_violet">document.querySelector </span>( <span
+                                class="code__item_green">'#sendBtn' </span>);</li>
+                        <li class="code__item"></li>
+                        <li class="code__item"><span class="code__item_pink">const </span><span
+                                class="code__item_violet">message </span><span class="code__item_pink">=
+                            </span>{</li>
+                        <li class="code__item"><span class="code__item_violet"> name</span>
+                            : <span class="code__item_green">"Jonathan Davis"</span>, </li>
+                        <li class="code__item">
+                            <span class="code__item_violet"> email</span>
+                            : <span class="code__item_green">""</span>,
+                        </li>
+                        <li class="code__item">
+                            <span class="code__item_violet"> message</span>
+                            : <span class="code__item_green">""</span>,
+                        </li>
+                        <li class="code__item"> date: <span class="code__item_green">"Thu 21 Apr"</span></li>
+                        <li class="code__item">}</li>
+                        <li class="code__item"></li>
+                        <li class="code__item">
+                            <span class="code__item_violet">button.addEventListener</span>(
+                            <span class="code__item_green">'click'</span>, ()
+                            <span class="code__item_green"> =&gt;</span> {
+                        </li>
+                        <li class="code__item">
+                            <span class="code__item_violet"> form.send</span>(<span class="code__item_violet">
+                                message</span> );
+                        </li>
+                        <li class="code__item">})</li>
+                    </ul>
                 </div>
             </section>
         </main>
-        <footer class="footer" id="footer">
-            <div class="footer__container">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
-                            class="footer__link">UglyGhoulChrist@gmail.com</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="https://api.whatsapp.com/send?phone=791018071**" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/WhatsApp.svg" alt="WhatsApp" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="viber://add?number=791018071**" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/Viber.svg" alt="Viber" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/Facebook.svg" alt="Facebook" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/Instagram.svg" alt="Instagram" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <footer class="footer __container" id="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
+                        class="footer__link">UglyGhoulChrist@gmail.com</a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://api.whatsapp.com/send?phone=791018071**" target="_blank" class="footer__link">
+                        <div class="footer__icon">
+                            <img src="img/footer/WhatsApp.svg" alt="WhatsApp" class="footer__img">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="viber://add?number=791018071**" target="_blank" class="footer__link">
+                        <div class="footer__icon">
+                            <img src="img/footer/Viber.svg" alt="Viber" class="footer__img">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <div class="footer__icon">
+                            <img src="img/footer/Facebook.svg" alt="Facebook" class="footer__img">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <div class="footer__icon">
+                            <img src="img/footer/Instagram.svg" alt="Instagram" class="footer__img">
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </footer>
     </div>
 </body>
