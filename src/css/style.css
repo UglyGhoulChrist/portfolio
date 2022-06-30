@@ -132,7 +132,7 @@ body {
 }
 
 .home {
-  padding: 100px 0 10% 0;
+  padding: 100px 0 5% 0;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -230,7 +230,7 @@ body {
 
 .about {
   min-height: 100vh;
-  padding: 10% 0;
+  padding: 100px 0 5% 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -320,7 +320,7 @@ body {
 
 .project {
   min-height: 100vh;
-  padding: 10% 0;
+  padding: 100px 0 5% 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -386,7 +386,7 @@ body {
 
 .contact {
   min-height: 90vh;
-  padding: 10% 0;
+  padding: 100px 0 5% 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
