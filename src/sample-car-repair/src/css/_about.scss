@@ -1,0 +1,33 @@
+// Секция ABOUT Начало
+.about {
+
+    &__container {
+        margin-top: -80px;
+        padding: 100px 8.5% 0 8.5%;
+        background: #fff url('../img/about/gears.svg') 100% 0 no-repeat;
+    }
+
+    &__overline-h3 {
+        max-width: 583px;
+        margin-bottom: 36px;
+    }
+
+    &__text {
+        color: #4B4B4B;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        margin-bottom: 54px;
+        text-align: justify;
+    }
+
+    &__picture {
+        margin-bottom: -120px;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
+
+// Секция ABOUT Конец

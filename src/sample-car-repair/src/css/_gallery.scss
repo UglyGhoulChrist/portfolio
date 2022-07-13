@@ -1,0 +1,73 @@
+.gallery {
+    background: url('../img/gallery/gears.svg') 0 100% no-repeat;
+    border: 1px solid transparent;
+    padding-bottom: 236px;
+
+    &__container {
+        margin-top: -80px;
+        padding: 100px 8.5% 0 8.5%;
+        background: white;
+    }
+
+    &__overline-h3 {
+        max-width: 583px;
+        margin-bottom: 55px;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__tab {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #02133C;
+        text-align: center;
+        width: 200px;
+        height: 43px;
+        transition: all 1s ease 0s;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 4px;
+            border-radius: 2px;
+            background: #C40B0B;
+            position: relative;
+            top: 13px;
+            transform: scale(0);
+            transition: all 1s ease 0s;
+        }
+
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    }
+
+
+    &__tab:hover {
+        // font-weight: 500;
+        color: #C40B0B;
+
+        transition: all 1s ease 0s;
+        transform: scale(1.2, 1.2);
+
+
+        &::after {
+            transform: scale(1);
+            transition: all 1s ease 0s;
+        }
+    }
+
+    &__picture {
+        margin-bottom: -120px;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

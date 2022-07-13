@@ -1,0 +1,113 @@
+.appointment {
+    background: url('../img/appointment/top-right.svg') top right no-repeat,
+        url('../img/appointment/bottom-left.svg') bottom left no-repeat #02133C;
+    border: 1px solid transparent;
+
+    &__container {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 130px;
+        padding-bottom: 210px;
+
+        @media (max-width: 1040px) {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+.form {
+
+    &_appointment {
+        padding: 76px 58px;
+        flex: 0 1 586px;
+        background: white;
+    }
+
+    &__shell {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 22px;
+        margin: 0 -11px;
+        justify-content: flex-end;
+    }
+
+    &__subtitle {
+        flex: 1 1 100%;
+        @include titleH2;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    &__block {
+        padding: 0 11px;
+        flex: 0 1 50%;
+
+        &_h180 {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 16px;
+        line-height: 3;
+        padding: 0 24px;
+        letter-spacing: 0.15px;
+        color: #959595;
+        background: #F5F5F5;
+
+        &_h180 {
+            height: 180px;
+            resize: none;
+        }
+    }
+}
+
+.button {
+    &_appointment {
+        margin-right: 11px;
+    }
+}
+
+.stat {
+    text-align: center;
+
+    &_appointment {
+        flex: 0 1 324px;
+
+        @media (max-width: 768px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-bottom: 46px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 56px;
+        color: #C40B0B;
+        margin-bottom: 46px;
+    }
+
+    &__text {
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}

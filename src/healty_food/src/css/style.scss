@@ -1,0 +1,87 @@
+// Подключение null-css.scss
+@import 'null-css';
+
+// Подключение семейства шрифтов Helvetica Neue
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBlackCondensed.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Подключение цветов
+@import 'colors';
+
+// Разметка основных блоков
+@import 'marking-main-blocks';
+
+// одключение HEADER-NAV
+@import 'header-nav';
+
+// Подключение LOGO
+@import 'logo';
+
+// Подключение BUTTON
+@import 'button';
+
+// Подключение H2-SUBTEXT
+@import 'h2-subtext';
+
+// Подключение CONTACT-CARD
+@import 'cards-contact';
+
+// Подключение CARD
+@import 'card';
+
+// Подключение PRODUKT-CARD
+@import 'product-card';
+
+// Подключение HOME
+@import 'home';
+
+// Подключение ABOUT
+@import 'about';
+
+// Подключение WORK
+@import 'work';
+
+// Подключение DISHES
+@import 'dishes';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// одключение FOOTER
+@import 'footer';

@@ -1,0 +1,88 @@
+// Секция STATS Начало 
+.stats {
+    background: url('../img/stats/OverlayImage.svg'), 0 0/cover no-repeat, #02133C;
+
+    &__container {
+        padding-bottom: 112px;
+        @media (max-width: 1040px) {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__overline-h3 {
+        max-width: 411px;
+        margin-top: 112px;
+        margin-bottom: 80px;
+    }
+
+    &__picture {
+        margin-bottom: 80px;
+        margin-top: -80px;
+        max-width: 498px;
+        max-height: 315px;
+
+        @media (max-width:910px) {
+            margin-top: 0px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 23px;
+    }
+}
+
+.block-stats {
+    vertical-align: top;
+    width: 237px;
+    min-height: 76px;
+
+        &__picture {
+        vertical-align: top;
+        width: 76px;
+        height: 76px;
+        display: inline-block;
+        margin-right: 11px;
+    }
+
+    &__icon {
+        width: 100%;
+    }
+
+    &__data {
+        display: inline-block;
+        width: 145px;
+        margin-top: 4px;
+        margin-bottom: 1px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #C40B0B;
+        margin-bottom: 3px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #F5F5F5;
+    }
+}
+
+// Секция STATS Конец 

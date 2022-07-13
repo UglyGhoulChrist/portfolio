@@ -1,0 +1,21 @@
+.appt-cta {
+    margin-top: -75px;
+
+    &__container {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background: #FFFFFF;
+    }
+
+    &__title {
+        padding: 45px 0;
+        max-width: 562px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.25;
+        color: #02133C;
+    }
+}

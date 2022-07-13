@@ -1,0 +1,67 @@
+//Секция VALPROP Начало
+.valprop {
+
+    &__container {
+        padding-top: 230px;
+        padding-bottom: 122px;
+
+        @media (max-width: 1040px) {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+
+    &__overline-h3 {
+        max-width: 583px;
+        margin-bottom: 68px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+        row-gap: 24px;
+    }
+
+    &__item {
+        flex: 0 0 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+.block {
+    display: flex;
+    align-items: flex-start;
+    gap: 23px;
+
+    &__picture {
+        flex: 0 0 63px;
+    }
+
+    &__icon {
+        width: 100%;
+    }
+
+    &__data {
+        padding-top: 4px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 1.37;
+        color: #02133C;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+}
+
+// Секция VALPROP Конец

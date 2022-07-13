@@ -1,0 +1,68 @@
+.video {
+    background: url('../img/video/video-bg.jpg') 0 0/cover no-repeat;
+
+    &__container {
+        padding: 112px 0px 120px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    // .video__overline-h3
+
+    &__overline-h3 {
+        color: white;
+        flex: 0 1 411px;
+    }
+
+    // .video__button
+
+    &__button {
+        position: relative;
+
+        background: url('../img/video/play-button_white.svg') center no-repeat;
+        width: 140px;
+        height: 140px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgba(255, 255, 0, .25);
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            animation: wave 3s linear infinite; 
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 4px solid rgba(255, 255, 0 , .125);
+            border-radius: 50%;
+            position: relative;
+            top: 2px;
+            left: 0px;
+            animation: wave 3s linear 1s infinite; 
+        }
+    }
+
+    &__button:hover {
+        background: url('../img/video/play-button_yellow.svg') center no-repeat;
+    }
+
+    @keyframes wave {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(3);
+        }
+    }
+}

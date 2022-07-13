@@ -1,0 +1,88 @@
+.header {
+    &__container {
+        position: relative;
+        margin-bottom: -154px;
+
+        @media (max-width: 1040px) {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+}
+
+.top-nav {
+    padding: 27px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+
+    &__logo {
+        color: #FFFFFF;
+        flex: 1 1 auto;
+    }
+
+    &__button {
+        flex: 0 0 auto;
+    }
+}
+
+.logo {}
+
+.service-hours {
+    padding-left: 34px;
+    background: url('../img/header-nav/access_time.svg') top left no-repeat;
+    flex: 0 0 auto;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__text {}
+}
+
+.call-us {
+    padding-left: 34px;
+    background: url('../img/header-nav/phone.svg') top left no-repeat;
+    flex: 0 0 auto;
+    color: #FFFFFF;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__phone {}
+}
+
+.button {}
+
+.nav {
+    background: white;
+    padding: 10px 48px 10px 40px;
+
+    &__list {
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__item {
+        &_last {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.57;
+        letter-spacing: 0.15px;
+        color: #02133C;
+        padding: 9px;
+    }
+}
