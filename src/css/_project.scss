@@ -13,6 +13,11 @@
         @include subtitle;
     }
 
+
+    &__block:not(:last-child){
+        margin-bottom: 30px;
+    }
+
     &__text {
     }
 

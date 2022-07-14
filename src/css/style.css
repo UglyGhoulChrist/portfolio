@@ -342,6 +342,9 @@ body {
     font-size: 28px;
   }
 }
+.project__block:not(:last-child) {
+  margin-bottom: 30px;
+}
 .project__subtext {
   font-weight: 400;
   font-size: 16px;
