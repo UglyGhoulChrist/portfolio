@@ -52,23 +52,6 @@
     position: relative;
     transition: all .5s ease 0s;
 
-    @media (max-width:450px) {
-        font-size: 12px;
-    }
-
-
-    &_violet {
-        color: $color-text-violet;
-    }
-
-    &_green {
-        color: $color-text-green;
-    }
-
-    &_pink {
-        color: $color-text-pink;
-    }
-
     &::before {
         content: '';
         display: block;
