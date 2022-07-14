@@ -9,6 +9,12 @@
         grid-template-columns: 1fr;
     }
 
+    &__hi {
+        padding-bottom: 20px;
+    }
+
+    &__picture {}
+
     &__text {
         @include text;
     }
@@ -21,14 +27,12 @@
         @include subtitle;
     }
 
-    &__subtext {
-        @include subtext;
-        margin-bottom: 10px;
+    &__row:not(:last-child) {
+        margin-bottom: 15px;
     }
 
     &__link {
         @include link;
-        margin-bottom: 20px;
     }
 
     &__image {

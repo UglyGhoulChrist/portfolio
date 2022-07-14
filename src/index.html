@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Поддержка браузера IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт-портфолио фронтенд разработчика UglyGhoulChrist">
+    <meta name="description" content="Сайт-портфолио фронтенд / бэкенд разработчика UglyGhoulChrist">
     <meta name="author" content="UglyGhoulChrist@gmail.com">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Сайт-портфолио фронтенд разработчика UglyGhoulChrist</title>
+    <title>Сайт-портфолио фронтенд / бэкенд бэкенд разработчика UglyGhoulChrist</title>
 </head>
 
 <body>
@@ -32,12 +31,14 @@
                 <div class="home__hi">
                     <div class="home__text">Привет. Меня зовут</div>
                     <h1 class="home__title">UglyGhoulChrist</h1>
-                    <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бекэнд разработчика</h2>
-                    <div class="home__subtext">Мои проекты:</div>
-                    <a href="https://github.com/UglyGhoulChrist" target="_blank" class="home__link">
-                        <span class="home__link_violet">// мои </span>
-                        <span class="home__link_green">проекты </span>
-                        <span class="home__link_pink">на Github</span></a>
+                    <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бэкенд разработчика</h2>
+                    <div class="home__row">
+                        <a class="home__link" href="https://github.com/UglyGhoulChrist" target="_blank">
+                            <span class="home__link_violet">// Мои </span>
+                            <span class="home__link_green">проекты </span>
+                            <span class="home__link_pink">на GitHub</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="home__picture">
                     <img src="img/home/image.webp" alt="Gadjets" class="home__image">
@@ -48,8 +49,26 @@
                 <div class="about__personal">
                     <h2 class="about__subtitle">&gt; Немного обо мне:</h2>
                     <div class="about__text">
-                        * Хочу получить новые знания.<br>* Пока это хобби.<br>
-                        * Но готов рассмотреть предложения.<br>* <br>* <br>
+                        * Мне 40 лет. Женат, дети.<br>
+                        * <br>
+                        * Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн университетов, смотрел
+                        обучающие видео из интернета, создавал свои небольшие проекты.<br>
+                        * Python понравился за простоту написания кода и огромную мощь языка, HTML и CSS - за сразу
+                        видимый результат на экране.<br>
+                        * Сейчас начинаю изучать Django и JavaScript.<br>
+                        * В будущем нацелен на Vue.js<br>
+                        * <br>
+                        * Нужен стажёр (ученик)? Обращайтесь! Время ограничено - уйду во фриланс.<br>
+                        * <br>
+                        * Хронология: <br>
+                        * Ноябрь 2021 - февраль 2022 (python, PyCharm)<br>
+                        * Март 2022 - июнь 2022 (HTML, CSS, Saas/SCSS, БЭМ...)<br>
+                        * Июль 2022 - (Django, JS)<br>
+                        * <br>
+                        * Так-же ради интереса пробовал писать программы для Andriod на Kotlin и для Windows на C#, но
+                        не зацепило.<br>
+                        * Ещё помню магические слова из века динозавров (begin, end, gosub...)<br>
+                        * <br>
                     </div>
                 </div>
                 <div class="about__skills">
@@ -96,58 +115,60 @@
             </section>
 
             <section class="project __container" id="project">
-                <div class="project__text">
-                    <h2 class="project__subtitle">&gt; Сайт-портфолио</h2>
-                    <div class="project__block">
-                        <div class="project__subtext">Проект создаётся в процессе обучения.</div>
-                        <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
-                            class="project__link"><span class="home__link_violet">https://</span><span
-                                class="home__link_green">github.com/</span><span class="home__link_pink">...</span><span
-                                class="home__link_violet">/portfolio</span></a>
-                    </div>
-                    <div class="project__block">
-                        <div class="project__subtext">Так же этот проект параллельно создаётся на Django</div>
-                        <a href="https://github.com/UglyGhoulChrist/portfolio_project.git" target="_blank"
-                            class="project__link"><span class="home__link_violet">https://</span><span
-                                class="home__link_green">github.com/</span><span class="home__link_pink">...</span><span
-                                class="home__link_violet">/portfolio</span><span
-                                class="home__link_violet">_project</span></a>
-                    </div>
-                </div>
-                <div class="project__picture">
-                    <img src="img/my-project/my-first-project.webp" alt="Сайт-портфолио" class="project__image">
-                </div>
-            </section>
-            <section class="project __container">
-                <div class="project__text">
-                    <h2 class="project__subtitle">&gt; Сайт доставки еды</h2>
-                    <div class="project__subtext">Учебный проект. Изучение HTML, CSS, Scss, методологии BEM ...</div>
-                    <a href="healty_food\src\index.html" target="_blank" class="project__link"><span
-                            class="home__link_violet">Сайт </span><span class="home__link_green">доставки </span><span
-                            class="home__link_pink">еды </span></a>
-                </div>
-                <div class="project__picture">
-                    <img src="img/my-project/healty_food_1.jpg" alt="Сайт доставки еды" class="project__image">
-                </div>
-                <div class="project__picture">
-                    <img src="img/my-project/healty_food_2.jpg" alt="Сайт доставки еды" class="project__image">
-                </div>
-                <div class="project__picture">
-                    <img src="img/my-project/healty_food_3.jpg" alt="Сайт доставки еды" class="project__image">
-                </div>
-            </section>
-            <section class="project __container">
-                <div class="project__text">
-                    <h2 class="project__subtitle">&gt; Сайт ремонта автомобилей</h2>
-                    <div class="project__subtext">Учебный проект. Многое нужно сделать.</div>
-                    <a href="sample-car-repair\src\index.html" target="_blank" class="project__link"><span
-                            class="home__link_violet">Сайт </span><span class="home__link_green">ремонта </span><span
-                            class="home__link_pink">автомобилей </span></a>
-                </div>
-                <div class="project__picture">
-                    <img src="img/my-project/car.jpg" alt="Сайт ремонта автомобилей" class="project__image">
-                </div>
 
+                <article class="project__article">
+                    <div class="project__text">
+                        <h2 class="project__subtitle">&gt; Сайт-портфолио</h2>
+                        <div class="project__block">
+                            <div class="project__subtext">Проект создаётся в процессе обучения (HTML и CSS/SCSS).</div>
+                            <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
+                                class="project__link"><span class="home__link_violet">https://</span><span
+                                    class="home__link_green">github.com/</span><span
+                                    class="home__link_pink">...</span><span
+                                    class="home__link_violet">/portfolio</span></a>
+                        </div>
+                        <div class="project__block">
+                            <div class="project__subtext">Этот-же проект на Django.</div>
+                            <a href="https://github.com/UglyGhoulChrist/portfolio_project.git" target="_blank"
+                                class="project__link"><span class="home__link_violet">https://</span><span
+                                    class="home__link_green">github.com/</span><span
+                                    class="home__link_pink">...</span><span
+                                    class="home__link_violet">/portfolio</span><span
+                                    class="home__link_violet">_project</span></a>
+                        </div>
+                    </div>
+                    <div class="project__picture">
+                        <img src="img/my-project/my-first-project.webp" alt="Сайт-портфолио" class="project__image">
+                    </div>
+                </article>
+                <article class="project__article">
+                    <div class="project__text">
+                        <h2 class="project__subtitle">&gt; Сайт доставки еды</h2>
+                        <div class="project__subtext">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...</div>
+                        <a href="healty_food\src\index.html" target="_blank" class="project__link"><span
+                                class="home__link_violet">Сайт </span><span class="home__link_green">доставки
+                            </span><span class="home__link_pink">еды </span></a>
+                    </div>
+                    <div class="project__picture">
+                        <img src="img/my-project/healty_food.jpg" alt="Сайт доставки еды" class="project__image">
+                    </div>
+                </article>
+
+                <article class="project__article">
+
+                    <div class="project__text">
+                        <h2 class="project__subtitle">&gt; Сайт ремонта автомобилей</h2>
+                        <div class="project__subtext">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...
+                            Многое
+                            нужно сделать.</div>
+                        <a href="sample-car-repair\src\index.html" target="_blank" class="project__link"><span
+                                class="home__link_violet">Сайт </span><span class="home__link_green">ремонта
+                            </span><span class="home__link_pink">автомобилей </span></a>
+                    </div>
+                    <div class="project__picture">
+                        <img src="img/my-project/car.jpg" alt="Сайт ремонта автомобилей" class="project__image">
+                    </div>
+                </article>
             </section>
 
 
@@ -223,16 +244,16 @@
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">
+                    <a href="https://t.me/UglyGhoulChrist" target="_blank" class="footer__link">
                         <div class="footer__icon">
-                            <img src="img/footer/Facebook.svg" alt="Facebook" class="footer__img">
+                            <img src="img/footer/Telegram.svg" alt="Telegram" class="footer__img">
                         </div>
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">
+                    <a href="http://vk.com/id709622701" target="_blank" class="footer__link">
                         <div class="footer__icon">
-                            <img src="img/footer/Instagram.svg" alt="Instagram" class="footer__img">
+                            <img src="img/footer/VK.svg" alt="VK" class="footer__img">
                         </div>
                     </a>
                 </li>

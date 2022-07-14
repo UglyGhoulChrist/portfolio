@@ -2,11 +2,18 @@
     min-height: 100vh;
     padding: 100px 0 5% 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 15vw;
 
-    @media (max-width:768px) {
-        grid-template-columns: 1fr;
+    &__article {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            min-height: auto;
+        }
     }
 
     &__subtitle {
@@ -14,12 +21,11 @@
     }
 
 
-    &__block:not(:last-child){
-        margin-bottom: 30px;
+    &__block:not(:last-child) {
+        margin-bottom: 40px;
     }
 
-    &__text {
-    }
+    &__text {}
 
     &__subtext {
         @include subtext;
@@ -27,12 +33,10 @@
     }
 
     &__link {
-        @include link-fz12;
-        // @include link;
+        @include link;
     }
 
-    &__picture {
-    }
+    &__picture {}
 
     &__image {
         width: 100%;

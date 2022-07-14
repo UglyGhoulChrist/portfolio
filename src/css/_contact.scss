@@ -1,6 +1,10 @@
 .contact {
     min-height: 90vh;
     padding: 100px 0 5% 0;
+
+    /*  
+    TODO Настроить отправку на почту
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -8,9 +12,13 @@
     @media (max-width:768px) {
         grid-template-columns: 1fr;
     }
+    */
 }
 
 .form {
+
+    display: none;
+    /*   TODO Настроить отправку на почту */
 
     &__subtitle {
         @include subtitle;

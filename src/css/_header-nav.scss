@@ -27,8 +27,6 @@
     }
 
     &__link {
-        // TODO заменить как будет готов бургер
-        // @include link;
-        @include link-fz12;
+        @include link;
     }
 }
