@@ -1,40 +1,31 @@
 .footer {
     min-height: 10vh;
+    border-top: 3px solid $border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:570px) {
+        flex-direction: column;
+    }
+
+    &__mail {
+        padding: 15px 15px;
+
+        @media (max-width:570px) {
+            padding-bottom: 0;
+        }
+    }
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
     }
 
     &__item {
-        padding: 5px 10px;
-
-        &:first-child {
-            flex: 1 1 auto;
-            padding-left: 0px;
-
-            @media (max-width:570px) {
-                flex: 0 0 100%;
-                text-align: center;
-                padding-right: 0px;
-            }
-        }
-
-        &:last-child {
-            padding-right: 0px;
-
-            @media (max-width:570px) {
-                padding-right: 10px;
-            }
-        }
+        padding: 15px 15px;
     }
 
     &__link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 58px;
         color: $color-link;
         transition: all .3s ease 0s;
 
@@ -49,6 +40,11 @@
         height: 48px;
         border-radius: 15px;
         transition: all .3s ease 0s;
+
+        @media (max-width:570px) {
+            width: 36px;
+            height: 36px;
+        }
 
         &:hover {
             box-shadow: 0px 0px 24px 0px $color-link-after_alfa;

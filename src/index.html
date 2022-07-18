@@ -14,16 +14,34 @@
 
 <body>
     <div class="wrapper">
-        <header class="header __container" id="header">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">UglyGhoulChrist</a></li>
-                    <li class="nav__item"><a href="#home" class="nav__link">_привет</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">_обо мне</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link">_мои проекты</a></li>
-                    <li class="nav__item"><a href="#footer" class="nav__link">_контакты</a></li>
-                </ul>
+        <header class="header" id="header">
+            <nav class="navbar">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="logo" id="logo">UglyGhoulChrist</a>
+                    <ul class="menu" id="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#home">_привет</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">_обо мне</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#project">_мои проекты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#footer">_контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            <div class="popup" id="popup"></div>
         </header>
 
         <main class="main">
@@ -122,15 +140,13 @@
                             <div class="project__subtext">Проект создаётся в процессе обучения (HTML и CSS/SCSS).</div>
                             <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
                                 class="project__link"><span class="violet">https://</span><span
-                                    class="green">github.com/</span><span
-                                    class="pink">portfolio</span></a>
+                                    class="green">github.com/</span><span class="pink">portfolio</span></a>
                         </div>
                         <div class="project__block">
                             <div class="project__subtext">Этот-же проект на Django.</div>
                             <a href="https://github.com/UglyGhoulChrist/portfolio_project.git" target="_blank"
                                 class="project__link"><span class="pink">https://</span><span
-                                    class="violet">github.com/</span><span
-                                    class="green">portfolio</span></a>
+                                    class="violet">github.com/</span><span class="green">portfolio</span></a>
                         </div>
                     </div>
                     <div class="project__picture">
@@ -218,12 +234,10 @@
                 </div>
             </section>
         </main>
-        <footer class="footer __container" id="footer">
+        <footer class="footer" id="footer">
+            <div class="footer__mail"><a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
+                    class="footer__link">UglyGhoulChrist@gmail.com</a></div>
             <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
-                        class="footer__link">UglyGhoulChrist@gmail.com</a>
-                </li>
                 <li class="footer__item">
                     <a href="https://wa.me/79101807117" target="_blank" class="footer__link">
                         <div class="footer__icon">
@@ -255,6 +269,7 @@
             </ul>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

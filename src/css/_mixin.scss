@@ -1,8 +1,9 @@
 @mixin title {
+    margin-bottom: 30px;
     font-size: 48px;
     line-height: 1.5;
+    font-weight: 500;
     color: $color-h1;
-    margin-bottom: 30px;
 
     @media (max-width:450px) {
         font-size: 42px;
@@ -17,13 +18,12 @@
     }
 }
 
-
 @mixin subtitle {
-    font-weight: 500;
+    margin-bottom: 30px;
     font-size: 32px;
     line-height: 1.33;
+    font-weight: 500;
     color: $color-h2;
-    margin-bottom: 30px;
 
     @media (max-width:360px) {
         font-size: 28px;
@@ -31,46 +31,41 @@
 }
 
 @mixin text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     color: $color-text;
 }
 
 @mixin subtext {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $color-text;
 }
 
 @mixin link {
-    font-weight: 500;
-    font-size: 16px;
+    position: relative;
     line-height: 1.5;
     color: $color-link;
-    position: relative;
     transition: all .5s ease 0s;
 
     &::before {
+        position: absolute;
+        top: 25px;
         content: '';
         display: block;
         width: 100%;
         height: 3px;
         background: $color-link;
         opacity: .3;
-        position: absolute;
-        top: 25px;
     }
 
     &::after {
+        position: absolute;
+        top: 25px;
         content: '';
         display: block;
         width: 0%;
         height: 3px;
         background: $color-link-after;
-        position: absolute;
-        top: 25px;
         transition: all .5s ease 0s;
     }
 

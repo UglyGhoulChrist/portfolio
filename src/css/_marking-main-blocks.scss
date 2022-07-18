@@ -1,4 +1,3 @@
-/* Разметка основных блоков */
 @import 'color';
 
 body {
@@ -9,11 +8,8 @@ body {
 [class*='__container'] {
     max-width: 1140px;
     margin: 0 auto;
-    // border-bottom: 3px solid $border;
 
     @media (max-width: 1170px) {
         margin: 0 15px;
     }
 }
-
-/* Разметка основных блоков КОНЕЦ */
