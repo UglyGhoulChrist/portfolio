@@ -1,5 +1,4 @@
 .header {
-    flex: 0 0 auto;
 }
 
 .navbar {
@@ -8,7 +7,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 75px;
     background: $background-color;
     border-bottom: 3px solid $border;
 
@@ -38,6 +37,7 @@
     &:hover {
         color: $color-link-hover;
     }
+    
 }
 
 .menu {
@@ -89,7 +89,7 @@
 
     .popup {
         position: fixed;
-        top: 50px;
+        top: 75px;
         left: -100%;
         width: 100%;
         height: 100%;
@@ -110,7 +110,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        padding: 50px 0;
+        padding: 75px 0;
         overflow: auto;
 
         &__item {

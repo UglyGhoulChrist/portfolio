@@ -5,14 +5,14 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width:570px) {
+    @media (max-width:768px) {
         flex-direction: column;
     }
 
     &__mail {
         padding: 15px 15px;
 
-        @media (max-width:570px) {
+        @media (max-width:768px) {
             padding-bottom: 0;
         }
     }
@@ -41,7 +41,7 @@
         border-radius: 15px;
         transition: all .3s ease 0s;
 
-        @media (max-width:570px) {
+        @media (max-width:768px) {
             width: 36px;
             height: 36px;
         }
