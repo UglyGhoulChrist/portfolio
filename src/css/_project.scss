@@ -2,41 +2,28 @@
     min-height: 100vh;
     padding: 100px 0 5% 0;
     display: grid;
-    gap: 15vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px 30px;
 
-    &__article {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-
-        @media (max-width:768px) {
-            grid-template-columns: 1fr;
-            min-height: auto;
-        }
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+        min-height: auto;
     }
 
     &__subtitle {
         @include subtitle;
     }
 
-
-    &__block:not(:last-child) {
-        margin-bottom: 40px;
-    }
-
     &__text {}
 
     &__subtext {
         @include subtext;
-        margin-bottom: 10px;
     }
 
     &__link {
         @include link;
+        margin-top: -30px;
     }
-
-    &__picture {}
 
     &__image {
         width: 100%;

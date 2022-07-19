@@ -1,5 +1,4 @@
 @mixin title {
-    margin-bottom: 30px;
     font-size: 48px;
     line-height: 1.5;
     font-weight: 500;
@@ -19,9 +18,8 @@
 }
 
 @mixin subtitle {
-    margin-bottom: 30px;
     font-size: 32px;
-    line-height: 1.33;
+    line-height: 1.25;
     font-weight: 500;
     color: $color-h2;
 

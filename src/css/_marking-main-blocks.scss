@@ -13,3 +13,10 @@ body {
         margin: 0 15px;
     }
 }
+
+[class*='__block'] {
+    display: grid;
+    height: fit-content;
+    justify-items: start;
+    row-gap: 30px;
+}

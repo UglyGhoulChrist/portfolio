@@ -1,20 +1,21 @@
 .header {
-}
-
-.navbar {
     position: fixed;
     z-index: 10;
     left: 0;
+    right: 0;
     top: 0;
-    width: 100%;
+}
+
+.navbar {
+    margin: 0 -15px;
     height: 75px;
     background: $background-color;
-    border-bottom: 3px solid $border;
 
     &__wrap {
         display: flex;
         justify-content: space-between;
         height: 100%;
+        border-bottom: 3px solid $border;
     }
 }
 
@@ -55,13 +56,11 @@
         color: $color-link;
         transition: all .3s ease 0s;
 
-
         &:hover {
             color: $color-link-hover;
         }
     }
 }
-
 
 @media (max-width: 768px) {
     .menu {

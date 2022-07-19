@@ -1,19 +1,13 @@
 .home {
-    padding: 100px 0 5% 0;
     min-height: 100vh;
+    padding: 100px 0 5% 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 70px 30px;
 
     @media (max-width:768px) {
         grid-template-columns: 1fr;
     }
-
-    &__hi {
-        padding-bottom: 20px;
-    }
-
-    &__picture {}
 
     &__text {
         @include text;
@@ -25,10 +19,6 @@
 
     &__subtitle {
         @include subtitle;
-    }
-
-    &__row:not(:last-child) {
-        margin-bottom: 15px;
     }
 
     &__link {

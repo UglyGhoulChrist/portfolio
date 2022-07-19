@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header" id="header">
+        <header class="header __container" id="header">
             <nav class="navbar">
                 <div class="navbar__wrap">
                     <div class="hamb">
@@ -42,133 +42,120 @@
                 </div>
             </nav>
             <div class="popup" id="popup"></div>
+
         </header>
-
-        <main class="main">
-            <section class="home __container" id="home">
-                <div class="home__hi">
-                    <div class="home__text">Привет. Меня зовут</div>
-                    <h1 class="home__title">UglyGhoulChrist</h1>
-                    <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бэкенд разработчика</h2>
-                    <div class="home__row">
-                        <a class="home__link" href="https://github.com/UglyGhoulChrist" target="_blank">
-                            <span class="violet">// Мои </span>
-                            <span class="green">проекты </span>
-                            <span class="pink">на GitHub</span>
-                        </a>
+        <div class="__container">
+            <main class="main">
+                <section class="home" id="home">
+                    <div class="__block">
+                        <div class="home__text">Привет. Меня зовут</div>
+                        <h1 class="home__title">UglyGhoulChrist</h1>
+                        <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бэкенд разработчика</h2>
+                        <div class="home__links">
+                            <a class="home__link" href="https://github.com/UglyGhoulChrist" target="_blank">
+                                <span class="violet">// Мои </span>
+                                <span class="green">проекты </span>
+                                <span class="pink">на GitHub</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="home__picture">
-                    <img src="img/home/image.webp" alt="Gadjets" class="home__image">
-                </div>
-            </section>
-
-            <section class="about __container" id="about">
-                <div class="about__personal">
-                    <h2 class="about__subtitle">&gt; Немного обо мне:</h2>
-                    <div class="about__text">
-                        * Мне 40 лет. Женат, дети.<br>
-                        * <br>
-                        * Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн университетов, смотрел
-                        обучающие видео из интернета, создавал свои небольшие проекты.<br>
-                        * Python понравился за простоту написания кода и огромную мощь языка, HTML и CSS - за сразу
-                        видимый результат на экране.<br>
-                        * Сейчас начинаю изучать Django и JavaScript.<br>
-                        * В будущем нацелен на Vue.js<br>
-                        * <br>
-                        * Нужен стажёр (ученик)? Обращайтесь! Время ограничено - уйду во фриланс.<br>
-                        * <br>
-                        * Хронология: <br>
-                        * Ноябрь 2021 - февраль 2022 (python, PyCharm)<br>
-                        * Март 2022 - июнь 2022 (HTML, CSS, Saas/SCSS, БЭМ...)<br>
-                        * Июль 2022 - (Django, JS)<br>
-                        * <br>
-                        * Так-же ради интереса пробовал писать программы для Andriod на Kotlin и для Windows на C#, но
-                        не зацепило.<br>
-                        * Ещё помню магические слова из века динозавров (begin, end, gosub...)<br>
-                        * <br>
+                    <div class="__block">
+                        <img src="img/home/image.webp" alt="Gadjets" class="home__image">
                     </div>
-                </div>
-                <div class="about__skills">
-                    <h2 class="about__subtitle">&gt; Мои навыки:</h2>
-                    <ul class="about__list">
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/html.svg" alt="Html" class="card__image">
-                            </div>
-                            <div class="card__text">Семантическая разметка кода</div>
-                        </li>
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/css.svg" alt="Css" class="card__image">
-                            </div>
-                            <div class="card__text">Стилизация элементов на странице</div>
-                        </li>
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/sass.svg" alt="Saas" class="card__image">
-                            </div>
-                            <div class="card__text">Быстрое написание стилей</div>
-                        </li>
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/figma.svg" alt="Figma" class="card__image">
-                            </div>
-                            <div class="card__text">Верстка сайта по макету Figma</div>
-                        </li>
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/python.svg" alt="Python" class="card__image">
-                            </div>
-                            <div class="card__text">Язык программирования общего назначения</div>
-                        </li>
-                        <li class="card">
-                            <div class="card__picture">
-                                <img src="img/about/django.svg" alt="Django" class="card__image">
-                            </div>
-                            <div class="card__text">Пока только изучаю</div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                </section>
 
-            <section class="project __container" id="project">
-                <article class="project__article">
-                    <div class="project__text">
+                <section class="about" id="about">
+                    <div class="__block">
+                        <h2 class="about__subtitle">&gt; Немного обо мне:</h2>
+                        <div class="about__text">
+                            * Мне 40 лет. Женат, дети.<br>
+                            * <br>
+                            * Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн университетов,
+                            смотрел
+                            обучающие видео из интернета, создавал свои небольшие проекты.<br>
+                            * Python понравился за простоту написания кода и огромную мощь языка, HTML и CSS - за сразу
+                            видимый результат на экране.<br>
+                            * Сейчас начинаю изучать Django и JavaScript.<br>
+                            * В будущем нацелен на Vue.js<br>
+                            * Так-же ради интереса пробовал писать программы для Andriod на Kotlin и для Windows на C#,
+                            но не зацепило.<br>
+                            * <br>
+                            * Нужен стажёр (ученик)? Обращайтесь! Время ограничено - уйду во фриланс.<br>
+                            * <br>
+                        </div>
+                    </div>
+                    <div class="__block">
+                        <h2 class="about__subtitle">&gt; Мои навыки:</h2>
+                        <ul class="about__list">
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/html.svg" alt="Html" class="card__image">
+                                </div>
+                                <div class="card__text">Семантическая разметка кода</div>
+                            </li>
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/css.svg" alt="Css" class="card__image">
+                                </div>
+                                <div class="card__text">Стилизация элементов на странице</div>
+                            </li>
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/sass.svg" alt="Saas" class="card__image">
+                                </div>
+                                <div class="card__text">Быстрое написание стилей</div>
+                            </li>
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/figma.svg" alt="Figma" class="card__image">
+                                </div>
+                                <div class="card__text">Верстка сайта по макету Figma</div>
+                            </li>
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/python.svg" alt="Python" class="card__image">
+                                </div>
+                                <div class="card__text">Язык программирования общего назначения</div>
+                            </li>
+                            <li class="card">
+                                <div class="card__picture">
+                                    <img src="img/about/django.svg" alt="Django" class="card__image">
+                                </div>
+                                <div class="card__text">Пока только изучаю</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="project" id="project">
+                    <div class="__block">
                         <h2 class="project__subtitle">&gt; Сайт-портфолио</h2>
-                        <div class="project__block">
-                            <div class="project__subtext">Проект создаётся в процессе обучения (HTML и CSS/SCSS).</div>
-                            <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
-                                class="project__link"><span class="violet">https://</span><span
-                                    class="green">github.com/</span><span class="pink">portfolio</span></a>
+                        <div class="project__subtext">Проект создаётся в процессе обучения (HTML и CSS/SCSS).
                         </div>
-                        <div class="project__block">
-                            <div class="project__subtext">Этот-же проект на Django.</div>
-                            <a href="https://github.com/UglyGhoulChrist/portfolio_project.git" target="_blank"
-                                class="project__link"><span class="pink">https://</span><span
-                                    class="violet">github.com/</span><span class="green">portfolio</span></a>
-                        </div>
+                        <a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank"
+                            class="project__link"><span class="violet">https://</span><span
+                                class="green">github.com/</span><span class="pink">portfolio</span></a>
+
+                        <div class="project__subtext">Этот-же проект на Django.</div>
+                        <a href="https://github.com/UglyGhoulChrist/portfolio_project.git" target="_blank"
+                            class="project__link"><span class="pink">https://</span><span
+                                class="violet">github.com/</span><span class="green">portfolio</span></a>
                     </div>
-                    <div class="project__picture">
+                    <div class="__block">
                         <img src="img/my-project/my-first-project.webp" alt="Сайт-портфолио" class="project__image">
                     </div>
-                </article>
-                <article class="project__article">
-                    <div class="project__text">
+                    <div class="__block">
                         <h2 class="project__subtitle">&gt; Сайт доставки еды</h2>
-                        <div class="project__subtext">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...</div>
+                        <div class="project__subtext">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...
+                        </div>
                         <a href="healty_food\src\index.html" target="_blank" class="project__link"><span
                                 class="violet">Сайт </span><span class="green">доставки
                             </span><span class="pink">еды </span></a>
                     </div>
-                    <div class="project__picture">
+                    <div class="__block">
                         <img src="img/my-project/healty_food.jpg" alt="Сайт доставки еды" class="project__image">
                     </div>
-                </article>
-
-                <article class="project__article">
-
-                    <div class="project__text">
+                    <div class="__block">
                         <h2 class="project__subtitle">&gt; Сайт ремонта автомобилей</h2>
                         <div class="project__subtext">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...
                             Многое нужно сделать.</div>
@@ -176,98 +163,102 @@
                                 class="violet">Сайт </span><span class="green">ремонта
                             </span><span class="pink">автомобилей </span></a>
                     </div>
-                    <div class="project__picture">
+                    <div class="__block">
                         <img src="img/my-project/car.jpg" alt="Сайт ремонта автомобилей" class="project__image">
                     </div>
-                </article>
-            </section>
+                </section>
+
+                <section class="contact" id="contact">
+                    <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+                        <h2 class="form__subtitle">&gt; Напишите мне</h2>
+                        <label for="name" class="form__subtext">_Ваше имя:</label>
+                        <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
+                            id="name">
+                        <label for="email" class="form__subtext">_Ваша почта:</label>
+                        <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
+                            id="email">
+                        <label for="message" class="form__subtext">_Ваше сообщение:</label>
+                        <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
+                            id="message"></textarea>
+                        <button type="submit" class="form__button">отправить</button>
+                    </form>
+                    <div class="code">
+                        <h2 class="code__subtitle">&gt; Java Script</h2>
+                        <ul class="code__list">
+                            <li class="code__item"><span class="pink">const </span><span class="violet">button
+                                </span><span class="pink">=
+                                </span><span class="violet">document.querySelector </span>( <span
+                                    class="green">'#sendBtn'
+                                </span>);</li>
+                            <li class="code__item"></li>
+                            <li class="code__item"><span class="pink">const </span><span class="violet">message
+                                </span><span class="pink">=
+                                </span>{</li>
+                            <li class="code__item"><span class="violet"> name</span>
+                                : <span class="green">"Jonathan Davis"</span>, </li>
+                            <li class="code__item">
+                                <span class="violet"> email</span>
+                                : <span class="green">""</span>,
+                            </li>
+                            <li class="code__item">
+                                <span class="violet"> message</span>
+                                : <span class="green">""</span>,
+                            </li>
+                            <li class="code__item"> date: <span class="green">"Thu 21 Apr"</span></li>
+                            <li class="code__item">}</li>
+                            <li class="code__item"></li>
+                            <li class="code__item">
+                                <span class="violet">button.addEventListener</span>(
+                                <span class="green">'click'</span>, ()
+                                <span class="green"> =&gt;</span> {
+                            </li>
+                            <li class="code__item">
+                                <span class="violet"> form.send</span>(<span class="violet">
+                                    message</span> );
+                            </li>
+                            <li class="code__item">})</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer">
+                <div class="footer__mail"><a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
+                        class="footer__link">UglyGhoulChrist@gmail.com</a></div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://wa.me/79101807117" target="_blank" class="footer__link">
+                            <div class="footer__icon">
+                                <img src="img/footer/WhatsApp.svg" alt="WhatsApp" class="footer__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="viber://chat?number=79101807117" target="_blank" class="footer__link">
+                            <div class="footer__icon">
+                                <img src="img/footer/Viber.svg" alt="Viber" class="footer__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://t.me/UglyGhoulChrist" target="_blank" class="footer__link">
+                            <div class="footer__icon">
+                                <img src="img/footer/Telegram.svg" alt="Telegram" class="footer__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="http://vk.com/id709622701" target="_blank" class="footer__link">
+                            <div class="footer__icon">
+                                <img src="img/footer/VK.svg" alt="VK" class="footer__img">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
 
 
-            <section class="contact __container" id="contact">
-                <form class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
-                    <h2 class="form__subtitle">&gt; Напишите мне</h2>
-                    <label for="name" class="form__subtext">_Ваше имя:</label>
-                    <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя" id="name">
-                    <label for="email" class="form__subtext">_Ваша почта:</label>
-                    <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                        id="email">
-                    <label for="message" class="form__subtext">_Ваше сообщение:</label>
-                    <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
-                        id="message"></textarea>
-                    <button type="submit" class="form__button">отправить</button>
-                </form>
-                <div class="code">
-                    <h2 class="code__subtitle">&gt; Java Script</h2>
-                    <ul class="code__list">
-                        <li class="code__item"><span class="pink">const </span><span class="violet">button </span><span
-                                class="pink">=
-                            </span><span class="violet">document.querySelector </span>( <span class="green">'#sendBtn'
-                            </span>);</li>
-                        <li class="code__item"></li>
-                        <li class="code__item"><span class="pink">const </span><span class="violet">message </span><span
-                                class="pink">=
-                            </span>{</li>
-                        <li class="code__item"><span class="violet"> name</span>
-                            : <span class="green">"Jonathan Davis"</span>, </li>
-                        <li class="code__item">
-                            <span class="violet"> email</span>
-                            : <span class="green">""</span>,
-                        </li>
-                        <li class="code__item">
-                            <span class="violet"> message</span>
-                            : <span class="green">""</span>,
-                        </li>
-                        <li class="code__item"> date: <span class="green">"Thu 21 Apr"</span></li>
-                        <li class="code__item">}</li>
-                        <li class="code__item"></li>
-                        <li class="code__item">
-                            <span class="violet">button.addEventListener</span>(
-                            <span class="green">'click'</span>, ()
-                            <span class="green"> =&gt;</span> {
-                        </li>
-                        <li class="code__item">
-                            <span class="violet"> form.send</span>(<span class="violet">
-                                message</span> );
-                        </li>
-                        <li class="code__item">})</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer class="footer" id="footer">
-            <div class="footer__mail"><a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
-                    class="footer__link">UglyGhoulChrist@gmail.com</a></div>
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="https://wa.me/79101807117" target="_blank" class="footer__link">
-                        <div class="footer__icon">
-                            <img src="img/footer/WhatsApp.svg" alt="WhatsApp" class="footer__img">
-                        </div>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="viber://chat?number=79101807117" target="_blank" class="footer__link">
-                        <div class="footer__icon">
-                            <img src="img/footer/Viber.svg" alt="Viber" class="footer__img">
-                        </div>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="https://t.me/UglyGhoulChrist" target="_blank" class="footer__link">
-                        <div class="footer__icon">
-                            <img src="img/footer/Telegram.svg" alt="Telegram" class="footer__img">
-                        </div>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="http://vk.com/id709622701" target="_blank" class="footer__link">
-                        <div class="footer__icon">
-                            <img src="img/footer/VK.svg" alt="VK" class="footer__img">
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        </div>
+
     </div>
     <script src="js/script.js"></script>
 </body>
