@@ -141,6 +141,9 @@ body {
 .menu__link:hover {
   color: #E3F2FD;
 }
+.menu__link.link {
+  color: red;
+}
 
 @media (max-width: 768px) {
   .menu {

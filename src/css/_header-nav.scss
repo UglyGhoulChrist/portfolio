@@ -38,7 +38,7 @@
     &:hover {
         color: $color-link-hover;
     }
-    
+
 }
 
 .menu {
@@ -58,6 +58,10 @@
 
         &:hover {
             color: $color-link-hover;
+        }
+
+        &.link {
+            color:red;
         }
     }
 }
