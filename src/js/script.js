@@ -74,3 +74,32 @@ function myScroll() {
     linkFooter.classList.remove('link');
   }
 }
+
+// Форма
+const isCheckboxOrRadio = type => ['checkbox', 'radio'].includes(type);
+
+const { form } = document.forms;
+
+function getFormValue(event) {
+  event.preventDefault();
+
+  const data = {};
+
+  for (let field of form) {
+    const { name } = field;
+
+    if (name) {
+      const { type, checked, value } = field;
+
+      data[name] = isCheckboxOrRadio(type) ? checked : value;
+    }
+  }
+
+  let today = new Date();
+  data['send'] = today.toLocaleString();
+
+  console.log(data);
+  alert('GitHubPages не поддерживает отправку формы, пишите в социальные сети.')
+}
+
+form.addEventListener('submit', getFormValue);
