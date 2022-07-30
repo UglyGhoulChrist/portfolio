@@ -54,11 +54,11 @@
                         <div class="home__text">Привет. Меня зовут</div>
                         <h1 class="home__title">UglyGhoulChrist</h1>
                         <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бэкенд разработчика</h2>
-                            <a class="home__link" href="https://github.com/UglyGhoulChrist" target="_blank">
-                                <span class="violet">// Мои </span>
-                                <span class="green">проекты </span>
-                                <span class="pink">на GitHub</span>
-                            </a>
+                        <a class="home__link" href="https://github.com/UglyGhoulChrist" target="_blank">
+                            <span class="violet">// Мои </span>
+                            <span class="green">проекты </span>
+                            <span class="pink">на GitHub</span>
+                        </a>
                     </div>
                     <div class="__block">
                         <img src="img/home/image.webp" alt="Gadjets" class="home__image">
@@ -168,21 +168,21 @@
                         <img src="img/my-project/car.jpg" alt="Сайт ремонта автомобилей" class="project__image">
                     </div>
                 </section>
-
                 <section class="contact" id="contact">
-                    <form id = "form" class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
-                        <h2 style="color: rgba(255, 0, 0,.5);" class="form__subtitle">&gt; GitHubPages не поддерживает отправку формы.</h2>
-                        <!-- <h2 class="form__subtitle">&gt; Напишите мне</h2> -->
+                    <form name="form" class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+                        <h2 class="form__subtitle">&gt; Напишите мне</h2>
                         <label for="name" class="form__subtext">_Ваше имя:</label>
                         <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
-                            id="name" value="vasya">
+                            id="name">
                         <label for="email" class="form__subtext">_Ваша почта:</label>
                         <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                            id="email" value="ff@jjj.ru">
+                            id="email">
                         <label for="message" class="form__subtext">_Ваше сообщение:</label>
                         <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
                             id="message"></textarea>
                         <button type="submit" class="form__button">отправить</button>
+                        <h2 class="form__subtitle warning">&gt; GitHubPages не поддерживает отправку
+                            формы. Пишите в социальные сети.</h2>
                     </form>
                     <div class="code">
                         <h2 class="code__subtitle">&gt; Java Script</h2>
@@ -197,14 +197,14 @@
                                 </span><span class="pink">=
                                 </span>{</li>
                             <li class="code__item"><span class="violet"> name</span>
-                                : <span class="green">"Jonathan Davis"</span>, </li>
+                                : <span class="green">"<span id="resultName"></span>"</span>, </li>
                             <li class="code__item">
                                 <span class="violet"> email</span>
-                                : <span class="green">""</span>,
+                                : <span class="green">"<span id="resultEmail"></span>"</span>,
                             </li>
                             <li class="code__item">
                                 <span class="violet"> message</span>
-                                : <span class="green">""</span>,
+                                : <span class="green">"<span id="resultMessage"></span>"</span>,
                             </li>
                             <li class="code__item"> date: <span class="green">"Thu 21 Apr"</span></li>
                             <li class="code__item">}</li>

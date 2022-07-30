@@ -103,3 +103,27 @@ function getFormValue(event) {
 }
 
 form.addEventListener('submit', getFormValue);
+
+// Немного баловства
+
+const myForm = document.forms.form;
+const formName = myForm.name;
+const formEmail = myForm.email;
+const formMessage = myForm.message;
+
+resultName = document.getElementById('resultName');
+resultName.textContent = formName.placeholder;
+resultEmail = document.getElementById('resultEmail');
+resultEmail.textContent = formEmail.placeholder;
+resultMessage = document.getElementById('resultMessage');
+resultMessage.textContent = formMessage.placeholder;
+
+formName.oninput = function () {
+  resultName.textContent = formName.value;
+};
+formEmail.oninput = function () {
+  resultEmail.textContent = formEmail.value;
+};
+formMessage.oninput = function () {
+  resultMessage.textContent = formMessage.value;
+};
