@@ -61,7 +61,7 @@
         }
 
         &.link {
-            color:red;
+            color:$color-text-red;
         }
     }
 }
@@ -86,7 +86,7 @@
         width: 30px;
         height: 3px;
         margin: 6px auto;
-        background-color: #fff;
+        background-color:$color-text;
         transition: 0.2s;
     }
 
@@ -96,7 +96,7 @@
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color:$color-text;
         z-index: 100;
         display: flex;
         transition: 0.3s;
@@ -113,7 +113,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        padding: 75px 0;
+        padding: 45px 0;
         overflow: auto;
 
         &__item {
@@ -125,12 +125,12 @@
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
-            color: #3f3f3f;
+            color: $border;
 
             &:hover {
-                background-color: rgba(122, 82, 179, 0.1);
+                background:$color-link-after_alfa;
             }
         }
     }
