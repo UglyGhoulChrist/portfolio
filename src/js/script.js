@@ -44,36 +44,30 @@ const project = document.getElementById('project');
 const contact = document.getElementById('contact');
 const footer = document.getElementById('footer');
 
+linkHome.classList.add('link');
+
 window.addEventListener('scroll', myScroll);
 
 function myScroll() {
-  let windowTop = window.pageYOffset;
-
-  let homeHeight = home.scrollHeight;
-  let aboutHeight = about.scrollHeight;
-  let projectHeight = project.scrollHeight;
-  let contactHeight = contact.scrollHeight;
-
-  if (windowTop < homeHeight) {
+  if (home.getBoundingClientRect().top <= 0 && -home.getBoundingClientRect().top < home.getBoundingClientRect()['height']) {
     linkHome.classList.add('link');
   }
   else {
     linkHome.classList.remove('link');
   }
-
-  if (homeHeight - 5 < windowTop && windowTop < homeHeight + aboutHeight -5) {
+  if (about.getBoundingClientRect().top <= 0 && -about.getBoundingClientRect().top < about.getBoundingClientRect()['height']) {
     linkAbout.classList.add('link');
   }
   else {
     linkAbout.classList.remove('link');
   }
-  if (homeHeight + aboutHeight -5 < windowTop && windowTop < homeHeight + aboutHeight + projectHeight -5) {
+  if (project.getBoundingClientRect().top <= 0 && -project.getBoundingClientRect().top < project.getBoundingClientRect()['height']) {
     linkProject.classList.add('link');
   }
   else {
     linkProject.classList.remove('link');
   }
-  if (homeHeight + aboutHeight + projectHeight -5 < windowTop && windowTop < homeHeight + aboutHeight + projectHeight + contactHeight -5) {
+  if (contact.getBoundingClientRect().top <= 0 && -contact.getBoundingClientRect().top < contact.getBoundingClientRect()['height']) {
     linkFooter.classList.add('link');
   }
   else {
