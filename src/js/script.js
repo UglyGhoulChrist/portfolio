@@ -118,24 +118,15 @@ formMessage.oninput = function () {
   resultMessage.textContent = formMessage.value;
 };
 
-// Попап при нажатии всплывает три раза
-let counter = 0;
-const formButton = document.getElementById('contact-popup');
-const formButtonClose = document.getElementById('contact-popup-close');
+// Попап при нажатии на форму всплывает один раз
+// const myForm = document.forms.form;
 const contactPopup = document.querySelector('.contact-popup');
 
-formName.addEventListener('click', addClass);
-formEmail.addEventListener('click', addClass);
-formMessage.addEventListener('click', addClass);
-formButton.addEventListener('click', addClass);
+// При клике на форму всплывает попап и удаляется обработчик события 
+myForm.addEventListener('click', toggleClass, { "once": true, });
+// При клике на попап убирается попап и удаляется обработчик события 
+contactPopup.addEventListener('click', toggleClass, { "once": true, });
 
-formButtonClose.addEventListener('click', function (e) {
-  contactPopup.classList.remove('_active-contact-popup');
-})
-
-function addClass() {
-  if (counter == 0) {
-    contactPopup.classList.add('_active-contact-popup');
-    counter++;
-  };
-}
+function toggleClass() {
+  contactPopup.classList.toggle('_active-contact-popup');
+};
