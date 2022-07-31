@@ -75,37 +75,27 @@ function myScroll() {
   }
 }
 
-// Форма
-const isCheckboxOrRadio = type => ['checkbox', 'radio'].includes(type);
+// Отправка формы в консоль
+// const isCheckboxOrRadio = type => ['checkbox', 'radio'].includes(type);
+// const { form } = document.forms;
+// function getFormValue(event) {
+//   event.preventDefault();
+//   const data = {};
+//   for (let field of form) {
+//     const { name } = field;
+//     if (name) {
+//       const { type, checked, value } = field;
+//       data[name] = isCheckboxOrRadio(type) ? checked : value;
+//     }
+//   }
+//   let today = new Date();
+//   data['send'] = today.toLocaleString();
+//   console.log(data);
+// }
+// form.addEventListener('submit', getFormValue);
 
-const { form } = document.forms;
 
-function getFormValue(event) {
-  event.preventDefault();
-
-  const data = {};
-
-  for (let field of form) {
-    const { name } = field;
-
-    if (name) {
-      const { type, checked, value } = field;
-
-      data[name] = isCheckboxOrRadio(type) ? checked : value;
-    }
-  }
-
-  let today = new Date();
-  data['send'] = today.toLocaleString();
-
-  console.log(data);
-  alert('GitHubPages не поддерживает отправку формы, пишите в социальные сети.')
-}
-
-form.addEventListener('submit', getFormValue);
-
-// Немного баловства
-
+// Повтор введённого кода в блоке с JavaScript
 const myForm = document.forms.form;
 const formName = myForm.name;
 const formEmail = myForm.email;
@@ -127,3 +117,25 @@ formEmail.oninput = function () {
 formMessage.oninput = function () {
   resultMessage.textContent = formMessage.value;
 };
+
+// Попап при нажатии всплывает три раза
+let counter = 0;
+const formButton = document.getElementById('contact-popup');
+const formButtonClose = document.getElementById('contact-popup-close');
+const contactPopup = document.querySelector('.contact-popup');
+
+formName.addEventListener('click', addClass);
+formEmail.addEventListener('click', addClass);
+formMessage.addEventListener('click', addClass);
+formButton.addEventListener('click', addClass);
+
+formButtonClose.addEventListener('click', function (e) {
+  contactPopup.classList.remove('_active-contact-popup');
+})
+
+function addClass() {
+  if (counter == 0) {
+    contactPopup.classList.add('_active-contact-popup');
+    counter++;
+  };
+}

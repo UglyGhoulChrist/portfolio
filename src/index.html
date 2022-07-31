@@ -169,7 +169,7 @@
                     </div>
                 </section>
                 <section class="contact" id="contact">
-                    <form name="form" class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+                    <form name="form" autocomplete="off" class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
                         <h2 class="form__subtitle">&gt; Напишите мне</h2>
                         <label for="name" class="form__subtext">_Ваше имя:</label>
                         <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
@@ -180,9 +180,12 @@
                         <label for="message" class="form__subtext">_Ваше сообщение:</label>
                         <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
                             id="message"></textarea>
-                        <button type="submit" class="form__button">отправить</button>
-                        <h2 class="form__subtitle warning">&gt; GitHubPages не поддерживает отправку
-                            формы. Пишите в социальные сети.</h2>
+                        <button id="contact-popup" type="submit" class="form__button">отправить</button>
+                        <div class="contact-popup">
+                            <div class="contact-popup__title">GitHubPages не поддерживает отправку формы, пишите в
+                                социальные сети.</div>
+                            <button id="contact-popup-close" class="contact-popup__btn">ЗАКРЫТЬ</button>
+                        </div>
                     </form>
                     <div class="code">
                         <h2 class="code__subtitle">&gt; Java Script</h2>
@@ -222,6 +225,7 @@
                         </ul>
                     </div>
                 </section>
+
             </main>
             <footer class="footer" id="footer">
                 <a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"

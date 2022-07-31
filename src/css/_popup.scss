@@ -1,0 +1,35 @@
+.contact-popup {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    max-width: 500px;
+    border: 3px solid red;
+    border-radius: 20px;
+    background: #eee;
+    padding: 20px;
+
+    // .popup__title
+    &._active-contact-popup {
+        top: 50%;
+        left: 50%;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    // .popup__btn
+
+    &__btn {
+        border: 3px solid black;
+        border-radius: 10px;
+        background: blue;
+        padding: 10px 30px;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
