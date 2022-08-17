@@ -1,6 +1,8 @@
 // Отображение страницы после полной загрузки
 const body = document.body;
-window.addEventListener("load", () => body.style.opacity = 1);
+window.addEventListener("load", () => {
+  gsap.fromTo('body', { opacity: 0 }, { opacity: 1, duration: .3 })
+});
 
 // Меню - гамбургер
 const hamb = document.querySelector("#hamb");
