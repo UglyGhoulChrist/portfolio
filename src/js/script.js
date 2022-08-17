@@ -1,7 +1,12 @@
+// Отображение страницы после полной загрузки
+const body = document.body;
+window.addEventListener("load", () => body.style.opacity = 1);
+
+// Меню - гамбургер
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const menu = document.querySelector("#menu").cloneNode(1);
-const body = document.body;
+// const body = document.body;
 
 hamb.addEventListener("click", hambHandler);
 
@@ -31,7 +36,7 @@ function closeOnClick() {
   body.classList.remove("noscroll");
 }
 
-
+// Изменение цвета ссылок меню
 // Получаем объекты ссылок меню и объекты секций
 const linkHome = document.getElementById('link_home');
 const linkAbout = document.getElementById('link_about');
