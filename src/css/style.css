@@ -283,7 +283,7 @@ body {
   font-weight: 500;
   color: #E3F2FD;
 }
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .home__title {
     font-size: 42px;
   }
