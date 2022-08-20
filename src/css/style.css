@@ -132,6 +132,11 @@ body {
 .logo:hover {
   color: #E3F2FD;
 }
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
 
 .menu {
   display: -webkit-box;
