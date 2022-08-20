@@ -1,8 +1,55 @@
+  // GSAP
+function animateFrom(elem, direction) {
+  direction = direction || 1;
+  var x = 0,
+      y = direction * 100;
+  if(elem.classList.contains("gs-reveal_left")) {
+    x = -100;
+    y = 0;
+  } else if (elem.classList.contains("gs-reveal_right")) {
+    x = 100;
+    y = 0;
+  }
+  elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  elem.style.opacity = "0";
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 1, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
+
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
+
+
 window.addEventListener("load", () => {
 
   // Отображение страницы после полной загрузки
   const body = document.body;
   gsap.fromTo('body', { opacity: 0 }, { opacity: 1, duration: .3 });
+
+
+  // GSAP
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs-reveal").forEach(function(elem) {
+    hide(elem); // assure that the element is hidden when scrolled into view
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+    });
+  });
+  
+
+
 
   // Меню - гамбургер
   const hamb = document.querySelector("#hamb");
