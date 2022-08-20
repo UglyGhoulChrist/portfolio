@@ -3,6 +3,7 @@
 body {
     background: $background-color;
     font-family: 'Fira Code', monospace;
+    transition: opacity .3s;
 }
 
 [class*='__container'] {

@@ -63,6 +63,8 @@ body {
 body {
   background: #000;
   font-family: "Fira Code", monospace;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 [class*=__container] {
@@ -131,11 +133,6 @@ body {
 }
 .logo:hover {
   color: #E3F2FD;
-}
-@media (max-width: 768px) {
-  .logo {
-    display: none;
-  }
 }
 
 .menu {
@@ -725,10 +722,4 @@ body {
 }
 .footer__img {
   width: 100%;
-}
-
-.gs-reveal {
-  opacity: 0;
-  visibility: hidden;
-  will-change: transform, opacity;
 }/*# sourceMappingURL=style.css.map */

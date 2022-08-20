@@ -38,10 +38,6 @@
     &:hover {
         color: $color-link-hover;
     }
-    @media (max-width: 768px) {
-        display: none;
-    }
-
 }
 
 .menu {

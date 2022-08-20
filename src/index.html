@@ -12,8 +12,8 @@
     <meta name="address" content="Россия, Владимирская область, город Александров">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/script.js"></script>
     <title>Сайт-портфолио фронтенд / бэкенд бэкенд разработчика UglyGhoulChrist</title>
 </head>
@@ -53,22 +53,22 @@
         </header>
         <div class="__container">
             <main class="main">
-
                 <section class="home" id="home">
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <div class="home__text gs-reveal">Привет. Меня зовут</div>
-                        <h1 class="home__title gs-reveal">UglyGhoulChrist</h1>
-                        <h2 class="home__subtitle gs-reveal">&gt; Я учусь на фронтенд / бэкенд разработчика</h2>
+                    <div class="__block">
+                        <div class="home__text" data-aos="fade-up">Привет. Меня зовут</div>
+                        <h1 class="home__title" data-aos="fade-up">UglyGhoulChrist</h1>
+                        <h2 class="home__subtitle" data-aos="fade-up">&gt; Я учусь на фронтенд / бэкенд разработчика
+                        </h2>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
+                    <div class="__block" data-aos="fade-up">
                         <img src="img/home/image.webp" alt="Gadjets" class="home__image">
                     </div>
                 </section>
 
                 <section class="about" id="about">
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <h2 class="about__subtitle gs-reveal">&gt; Немного обо мне:</h2>
-                        <div class="about__text gs-reveal">
+                    <div class="__block">
+                        <h2 class="about__subtitle" data-aos="fade-up">&gt; Немного обо мне:</h2>
+                        <div class="about__text" data-aos="fade-up">
                             * Мне 40 лет. Женат, дети.<br>
                             * <br>
                             * Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн университетов,
@@ -85,40 +85,40 @@
                             * <br>
                         </div>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
-                        <h2 class="about__subtitle gs-reveal">&gt; Мои навыки:</h2>
+                    <div class="__block">
+                        <h2 class="about__subtitle" data-aos="fade-up">&gt; Мои навыки:</h2>
                         <ul class="about__list">
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/html.svg" alt="Html" class="card__image">
                                 </div>
                                 <div class="card__text">Семантическая разметка кода</div>
                             </li>
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/css.svg" alt="Css" class="card__image">
                                 </div>
                                 <div class="card__text">Стилизация элементов на странице</div>
                             </li>
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/sass.svg" alt="Saas" class="card__image">
                                 </div>
                                 <div class="card__text">Быстрое написание стилей</div>
                             </li>
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/figma.svg" alt="Figma" class="card__image">
                                 </div>
                                 <div class="card__text">Верстка сайта по макету Figma</div>
                             </li>
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/python.svg" alt="Python" class="card__image">
                                 </div>
                                 <div class="card__text">Язык программирования общего назначения</div>
                             </li>
-                            <li class="card gs-reveal">
+                            <li class="card" data-aos="fade-up">
                                 <div class="card__picture">
                                     <img src="img/about/django.svg" alt="Django" class="card__image">
                                 </div>
@@ -129,116 +129,126 @@
                 </section>
 
                 <section class="project" id="project">
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <h2 class="project__subtitle gs-reveal">&gt; Сайт-портфолио</h2>
-                        <div class="project__subtext gs-reveal">Проект редактируется в процессе обучения (HTML и CSS/SCSS).
+                    <div class="__block">
+                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт-портфолио</h2>
+                        <div class="project__subtext" data-aos="fade-up">Проект редактируется в процессе обучения (HTML
+                            и CSS/SCSS).
                         </div>
-                        <a class="project__link gs-reveal" href="https://github.com/UglyGhoulChrist/portfolio" target="_blank">
+                        <a class="project__link" data-aos="fade-up" href="https://github.com/UglyGhoulChrist/portfolio"
+                            target="_blank">
                             <span class="violet">github</span><span class="green">.com/</span><span
                                 class="pink">portfolio</span></a>
 
-                        <div class="project__subtext">Мои проекты на GitHub</div>
-                        <a class="project__link gs-reveal" href="https://github.com/UglyGhoulChrist" target="_blank">
+                        <div class="project__subtext" data-aos="fade-up">Мои проекты на GitHub</div>
+                        <a class="project__link" data-aos="fade-up" href="https://github.com/UglyGhoulChrist"
+                            target="_blank">
                             <span class="violet">github</span><span class="green">.com/</span><span
                                 class="pink">UglyGhoulChrist</span>
                         </a>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
+                    <div class="__block" data-aos="fade-up">
                         <img src="img/my-project/portfolio.webp" alt="Сайт-портфолио" class="project__image">
                     </div>
 
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <h2 class="project__subtitle gs-reveal">&gt; Сайт доставки еды</h2>
-                        <div class="project__subtext gs-reveal">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...
+                    <div class="__block">
+                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт доставки еды</h2>
+                        <div class="project__subtext" data-aos="fade-up">Учебный проект. Изучение HTML, CSS, SCSS,
+                            методологии БЭМ...
                         </div>
-                        <a href="healty_food\src\index.html" target="_blank" class="project__link gs-reveal"><span
-                                class="violet">Сайт </span><span class="green">доставки
+                        <a href="healty_food\src\index.html" data-aos="fade-up" target="_blank"
+                            class="project__link"><span class="violet">Сайт </span><span class="green">доставки
                             </span><span class="pink">еды </span></a>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
+                    <div class="__block" data-aos="fade-up">
                         <img src="img/my-project/healty_food.jpg" alt="Сайт доставки еды" class="project__image">
                     </div>
 
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <h2 class="project__subtitle gs-reveal">&gt; John</h2>
-                        <div class="project__subtext gs-reveal">Проект на Django. Написан на HTML (с шаблонизатором jinja), CSS
+                    <div class="__block">
+                        <h2 class="project__subtitle" data-aos="fade-up">&gt; John</h2>
+                        <div class="project__subtext" data-aos="fade-up">Проект на Django. Написан на HTML (с
+                            шаблонизатором jinja), CSS
                             (SCSS), JS (немного jquery), также применялся сборщик webpack/gulp.
                         </div>
-                        <a href="https://uglyghoulchrist.pythonanywhere.com/" target="_blank"
-                            class="project__link gs-reveal"><span class="violet">https://</span><span
+                        <a href="https://uglyghoulchrist.pythonanywhere.com/" data-aos="fade-up" target="_blank"
+                            class="project__link"><span class="violet">https://</span><span
                                 class="green">...pythonanywhere.</span><span class="pink">com/</span></a>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
+                    <div class="__block" data-aos="fade-up">
                         <img src="img\my-project\JohnDjango.jpg" alt="Сайт John" class="project__image">
                     </div>
 
-                    <div class="__block gs-reveal gs-reveal_left">
-                        <h2 class="project__subtitle gs-reveal">&gt; Сайт ремонта автомобилей</h2>
-                        <div class="project__subtext gs-reveal">Учебный проект. Изучение HTML, CSS, SCSS, методологии БЭМ...
+                    <div class="__block">
+                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт ремонта автомобилей</h2>
+                        <div class="project__subtext" data-aos="fade-up">Учебный проект. Изучение HTML, CSS, SCSS,
+                            методологии БЭМ...
                             Многое нужно сделать. Особенно адаптив!</div>
-                        <a href="sample-car-repair\src\index.html" target="_blank" class="project__link gs-reveal"><span
-                                class="violet">Сайт </span><span class="green">ремонта
+                        <a href="sample-car-repair\src\index.html" data-aos="fade-up" target="_blank"
+                            class="project__link"><span class="violet">Сайт </span><span class="green">ремонта
                             </span><span class="pink">автомобилей </span></a>
                     </div>
-                    <div class="__block gs-reveal gs-reveal_right">
+                    <div class="__block" data-aos="fade-up">
                         <img src="img/my-project/car.jpg" alt="Сайт ремонта автомобилей" class="project__image">
                     </div>
                 </section>
                 <section class="contact" id="contact">
-                    <form name="form" autocomplete="off" class="form gs-reveal gs-reveal_left" action="mailto:UglyGhoulChrist@gmail.com"
+                    <form name="form" autocomplete="off" class="form" action="mailto:UglyGhoulChrist@gmail.com"
                         enctype="text/plain">
-                        <h2 class="form__subtitle gs-reveal">&gt; Напишите мне</h2>
-                        <label for="name" class="form__subtext gs-reveal">_Ваше имя:</label>
-                        <input class="form__input gs-reveal" maxlength="40" type="text" name="name" placeholder="Ваше имя"
+                        <h2 class="form__subtitle" data-aos="fade-up">&gt; Напишите мне</h2>
+                        <label for="name" class="form__subtext" data-aos="fade-up">_Ваше имя:</label>
+                        <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
                             id="name">
-                        <label for="email" class="form__subtext gs-reveal">_Ваша почта:</label>
-                        <input class="form__input gs-reveal" maxlength="40" type="email" name="email" placeholder="Ваш Email"
+                        <label for="email" class="form__subtext" data-aos="fade-up">_Ваша почта:</label>
+                        <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
                             id="email">
-                        <label for="message" class="form__subtext gs-reveal">_Ваше сообщение:</label>
-                        <textarea class="form__input form__input_message gs-reveal" name="message" placeholder="Ваше сообщение"
+                        <label for="message" class="form__subtext" data-aos="fade-up">_Ваше сообщение:</label>
+                        <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
                             id="message"></textarea>
-                        <button id="contact-popup" type="submit" class="form__button gs-reveal">отправить</button>
+                        <button id="contact-popup" type="submit" class="form__button"
+                            data-aos="fade-up">отправить</button>
                         <div class="contact-popup">
                             <div class="contact-popup__title">GitHubPages не поддерживает отправку формы, пишите в
                                 социальные сети.</div>
                             <button tabindex="-1" id="contact-popup-close" class="contact-popup__btn">ЗАКРЫТЬ</button>
                         </div>
                     </form>
-                    <div class="code gs-reveal gs-reveal_right">
-                        <h2 class="code__subtitle gs-reveal">&gt; Java Script</h2>
+                    <div class="code">
+                        <h2 class="code__subtitle" data-aos="fade-up">&gt; Java Script</h2>
                         <ul class="code__list">
-                            <li class="code__item gs-reveal"><span class="pink">const </span><span class="violet">button
+                            <li class="code__item" data-aos="fade-up"><span class="pink">const </span><span
+                                    class="violet">button
                                 </span><span class="pink">=
                                 </span><span class="violet">document.querySelector </span>( <span
                                     class="green">'#sendBtn'
                                 </span>);</li>
-                            <li class="code__item gs-reveal"></li>
-                            <li class="code__item gs-reveal"><span class="pink">const </span><span class="violet">message
+                            <li class="code__item" data-aos="fade-up"></li>
+                            <li class="code__item" data-aos="fade-up"><span class="pink">const </span><span
+                                    class="violet">message
                                 </span><span class="pink">=
                                 </span>{</li>
-                            <li class="code__item gs-reveal"><span class="violet"> name</span>
+                            <li class="code__item" data-aos="fade-up"><span class="violet"> name</span>
                                 : <span class="green">"<span id="resultName"></span>"</span>, </li>
-                            <li class="code__item gs-reveal">
+                            <li class="code__item" data-aos="fade-up">
                                 <span class="violet"> email</span>
                                 : <span class="green">"<span id="resultEmail"></span>"</span>,
                             </li>
-                            <li class="code__item gs-reveal">
+                            <li class="code__item" data-aos="fade-up">
                                 <span class="violet"> message</span>
                                 : <span class="green">"<span id="resultMessage"></span>"</span>,
                             </li>
-                            <li class="code__item gs-reveal"> date: <span class="green">"Thu 21 Apr"</span></li>
-                            <li class="code__item gs-reveal">}</li>
-                            <li class="code__item gs-reveal"></li>
-                            <li class="code__item gs-reveal">
+                            <li class="code__item" data-aos="fade-up"> date: <span class="green">"Thu 21 Apr"</span>
+                            </li>
+                            <li class="code__item" data-aos="fade-up">}</li>
+                            <li class="code__item" data-aos="fade-up"></li>
+                            <li class="code__item" data-aos="fade-up">
                                 <span class="violet">button.addEventListener</span>(
                                 <span class="green">'click'</span>, ()
                                 <span class="green"> =&gt;</span> {
                             </li>
-                            <li class="code__item gs-reveal">
+                            <li class="code__item" data-aos="fade-up">
                                 <span class="violet"> form.send</span>(<span class="violet">
                                     message</span> );
                             </li>
-                            <li class="code__item gs-reveal">})</li>
+                            <li class="code__item" data-aos="fade-up">})</li>
                         </ul>
                     </div>
                 </section>
