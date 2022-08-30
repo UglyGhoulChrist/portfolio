@@ -1,41 +1,35 @@
 .testimonials {
+    padding-bottom: 20%;
 
     &__container {
-        padding-bottom: 210px;
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr;
 
-        @media (max-width: 1040px) {
-            padding-left: 1%;
-            padding-right: 1%;
+        @media (min-width:1024px) {
+            grid-template-columns: 1fr 2fr;
         }
     }
 
-    &__overline-h3 {}
+    &__overline-h2 {}
 
     &__list {
-        display: flex;
-        justify-content: space-around;
-        gap: 23px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
 
-        flex-wrap: wrap;
+        @media (min-width:768px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
 .card-testimonials {
-    flex: 1 1 315px;
     padding: 50px 43px 40px 43px;
     background: white;
     display: flex;
     flex-direction: column;
     gap: 18px;
-
-    &_overline {
-        padding: 0;
-        background: #F5F5F5;
-
-        @media (max-width: 1015px) {
-            flex: 1 1 100%;
-        }
-    }
 
     &__text {
         font-size: 16px;
@@ -48,16 +42,15 @@
     &__user {
         display: flex;
         flex: 0 0 48px;
-        gap :17px;
+        gap: 17px;
         align-items: center;
     }
 
-    &__picture{
+    &__picture {
         border-radius: 50%;
     }
 
-    &__image {
-    }
+    &__image {}
 
     &__title {
         font-weight: 700;

@@ -10,6 +10,7 @@
     <meta name="author" content="UglyGhoulChrist@gmail.com">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./script/vue.js"></script>
     <title>sample-car-repair</title>
 </head>
 
@@ -59,14 +60,10 @@
             <!-- Секция ABOUT Начало -->
             <section class="about">
                 <div class="about__container">
-
-                    <div class="h3-overline about__overline-h3">
-                        <div class="h3-overline__subtitle">
-                            Who we are
-                        </div>
-                        <h2 class="h3-overline__title">ABOUT. Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+                    <div class="h2-overline about__overline-h2">
+                        <div class="h2-overline__subtitle">Who we are</div>
+                        <h2 class="h2-overline__title">ABOUT. Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                     </div>
-
                     <div class="about__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                         suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure
                         reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
@@ -78,137 +75,57 @@
             </section>
             <!-- Секция ABOUT Конец -->
 
-            <!-- Секция VALPROP Начало -->
             <section class="valprop">
-                <div class="valprop__container">
-                    <div class="h3-overline valprop__overline-h3">
-                        <div class="h3-overline__subtitle">OUR PROMISE TO YOU</div>
-                        <h2 class="h3-overline__title">VALPROP. Sed perspiciatis omnis iste natus</h2>
+                <div class="__container">
+                    <div id="h2" class="h2-overline valprop__overline-h2">
+                        <div class="h2-overline__subtitle">{{subtitle}}</div>
+                        <h2 class="h2-overline__title">{{title}}</h2>
+                        <!-- <div class="h2-overline__subtitle" :class="inputText" >{{inputText}}</div>
+                        <input type="text" v-on:input="inputText = $event.target.value"> -->
                     </div>
-                    <ul class="valprop__list">
-                        <li class="block valprop__item">
+                    <ul id="valprop-blocks" class="valprop__list">
+                        <li v-for="block in blocks" class="block valprop__item">
                             <div class="block__picture">
-                                <img class="block__icon" src="img/val-prop/1.svg" alt="icon">
+                                <img class="block__icon" :src="block.icon" alt="icon">
                             </div>
                             <div class="block__data">
-                                <div class="block__title">Quality service. Everytime.</div>
-                                <div class="block__text">At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </div>
-                        </li>
-
-                        <li class="block valprop__item">
-                            <div class="block__picture">
-                                <img class="block__icon" src="img/val-prop/2.svg" alt="icon">
-                            </div>
-                            <div class="block__data">
-                                <div class="block__title">Services by certified pros</div>
-                                <div class="block__text"> Dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                    velit, sed quia non numquam eius modi tempora incidunt.</div>
-                            </div>
-                        </li>
-
-                        <li class="block valprop__item">
-                            <div class="block__picture">
-                                <img class="block__icon" src="img/val-prop/3.svg" alt="icon">
-                            </div>
-                            <div class="block__data">
-                                <div class="block__title">Real people. Honest work.</div>
-                                <div class="block__text"> Quis autem vel eum iure reprehenderit qui in ea
-                                    voluptate velit esse quam nihil molestiae consequatur illum.</div>
+                                <div class="block__title">{{block.title}}</div>
+                                <div class="block__text">{{block.text}}</div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
-            <!-- Секция VALPROP Конец -->
-
-            <!-- Секция VIDEO Начало -->
             <section class="video">
-                <div class="video__container">
-                    <div class="h3-overline video__overline-h3">
-                        <h2 class="h3-overline__title h3-overline__title_white">VIDEO. Nemo enim ipsam voluptatem quia
+                <div class="__container">
+                    <div class="h2-overline video__overline-h2">
+                        <h2 class="h2-overline__title h2-overline__title_white">VIDEO. Nemo enim ipsam voluptatem quia
                             voluptas in proident</h2>
                         <button class="video__button"></button>
                     </div>
                 </div>
             </section>
-            <!-- Секция VIDEO Конец -->
-
-            <!-- Секция SERVICES Начало -->
             <section class="services">
-                <div class="services__container">
-                    <div class="h3-overline services__overline-h3">
-                        <div class="h3-overline__subtitle">Our Services</div>
-                        <h2 class="h3-overline__title">SERVICES. Sed perspiciatis omnis iste natus</h2>
+                <div class="__container">
+                    <div class="h2-overline services__overline-h2">
+                        <div class="h2-overline__subtitle">Our Services</div>
+                        <h2 class="h2-overline__title">SERVICES. Sed perspiciatis omnis iste natus</h2>
                     </div>
-                    <ul class="services__list">
-                        <li class="card">
-                            <a href="" class="card__link">
+                    <ul id="services-blocks" class="services__list">
+                        <li v-for="block in blocks" class="card">
+                            <a :href="block.link" class="card__link">
                                 <div class="card__picture">
-                                    <img class="card__icon" src="img/services/1.svg" alt="">
+                                    <img class="card__icon" :src="block.icon" alt="icon">
                                 </div>
-                                <div class="card__title">Multi Point Inspections</div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="" class="card__link">
-                                <div class="card__picture">
-                                    <img class="card__icon" src="img/services/2.svg" alt="">
-                                </div>
-                                <div class="card__title">Auto Repair</div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="" class="card__link">
-                                <div class="card__picture">
-                                    <img class="card__icon" src="img/services/3.svg" alt="">
-                                </div>
-                                <div class="card__title">Auto Maintenance</div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="" class="card__link">
-                                <div class="card__picture">
-                                    <img class="card__icon" src="img/services/4.svg" alt="">
-                                </div>
-                                <div class="card__title">Tires </div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="" class="card__link">
-                                <div class="card__picture">
-                                    <img class="card__icon" src="img/services/5.svg" alt="">
-                                </div>
-                                <div class="card__title">Service Warranty</div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="" class="card__link">
-                                <div class="card__picture">
-                                    <img class="card__icon" src="img/services/6.svg" alt="">
-                                </div>
-                                <div class="card__title">Shop Online</div>
-                                <div class="card__text">At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+                                <div class="card__title">{{block.title}}</div>
+                                <div class="card__text">{{block.text}}</div>
                             </a>
                         </li>
                     </ul>
                     <button class="button services__button">Learn More</button>
-
                 </div>
             </section>
-            <!-- Секция SERVICES Конец -->
+
 
             <!-- Секция APOINTMENT Начало -->
             <!-- TODO НЕ СДЕЛАННА ФОРМА -->
@@ -254,17 +171,12 @@
 
             <!-- Секция GALLERY Начало -->
             <section class="gallery">
-                <div class="gallery__container">
-
-                    <div class="h3-overline gallery__overline-h3">
-                        <div class="h3-overline__subtitle">
-                            GALLERY & LIVE STREAMS
-                        </div>
-                        <h2 class="h3-overline__title">GALLERY. Check out our hard</h2>
+                <div class="__container">
+                    <div class="h2-overline gallery__overline-h2">
+                        <div class="h2-overline__subtitle">GALLERY & LIVE STREAMS</div>
+                        <h2 class="h2-overline__title">GALLERY. Check out our hard</h2>
                     </div>
-
                     <ul class="gallery__tabs">
-                        <li class="gallery__tab"> Gallery </li>
                         <li class="gallery__tab"> Live stream: Bay 1 </li>
                         <li class="gallery__tab"> Live stream: Bay 2 </li>
                         <li class="gallery__tab"> Live stream: Bay 3 </li>
@@ -276,54 +188,36 @@
             </section>
             <!-- Секция GALLERY Конец -->
 
-            <!-- Секция TESTIMONIALS Начало -->
+
             <section class="testimonials">
                 <div class="testimonials__container">
-                    <ul class="testimonials__list">
-                        <li class="card-testimonials card-testimonials_overline">
-                            <div class="h3-overline testimonials__overline-h3">
-                                <div class="h3-overline__subtitle">Our CUSTOMERS</div>
-                                <h2 class="h3-overline__title">TESTIM ONIALS. Illum qui dolorem eum quo voluptas ut
-                                    distinctio</h2>
-                            </div>
-                        </li>
-                        <li class="card-testimonials">
-                            <div class="card-testimonials__text">“Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim
-                                illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”</div>
+                    <div class="h2-overline testimonials__overline-h2">
+                        <div class="h2-overline__subtitle">Our CUSTOMERS</div>
+                        <h2 class="h2-overline__title">TESTIM ONIALS. Illum qui dolorem eum quo voluptas ut distinctio
+                        </h2>
+                    </div>
+                    <ul id="testimonials-blocks" class="testimonials__list">
+                        <li v-for="block in blocks" class="card-testimonials">
+                            <div class="card-testimonials__text">{{block.text}}</div>
                             <div class="card-testimonials__user">
                                 <div class="card-testimonials__picture">
-                                    <img src="img/testimonials/1.jpg" alt="foto" class="card-testimonials__image">
+                                    <img :src="block.foto" alt="foto" class="card-testimonials__image">
                                 </div>
-                                <div class="card-testimonials__title">Cullen Bohannon</div>
+                                <div class="card-testimonials__title">{{block.name}}</div>
                             </div>
-
-                        </li>
-                        <li class="card-testimonials">
-                            <div class="card-testimonials__text">“Sed ut perspiciatis unde omnis iste natus error sit
-                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                                inventore veritatis et quasi ipsam voluptatem aspernatur.”</div>
-                            <div class="card-testimonials__user">
-                                <div class="card-testimonials__picture">
-                                    <img src="img/testimonials/2.jpg" alt="foto" class="card-testimonials__image">
-                                </div>
-                                <div class="card-testimonials__title">Jennifer Thomas</div>
-                            </div>
-
                         </li>
                     </ul>
                 </div>
             </section>
-            <!-- Секция TESTIMONIALS Конец -->
 
             <!-- Секция STATS Начало -->
             <section class="stats">
                 <div class="stats__container">
                     <div class="stats__top">
 
-                        <div class="h3-overline stats__overline-h3">
-                            <div class="h3-overline__subtitle h3-overline__subtitle_white">OUR IMPACT</div>
-                            <h2 class="h3-overline__title h3-overline__title_white">STATS. Nemo enim ipsam voluptatem
+                        <div class="h2-overline stats__overline-h2">
+                            <div class="h2-overline__subtitle h2-overline__subtitle_white">OUR IMPACT</div>
+                            <h2 class="h2-overline__title h2-overline__title_white">STATS. Nemo enim ipsam voluptatem
                                 quia
                             </h2>
                         </div>
@@ -446,6 +340,7 @@
         </footer>
         <!-- Секция FOOTER Конец -->
     </div>
+    <script defer src="./script/script.js"></script>
 </body>
 
 </html>
