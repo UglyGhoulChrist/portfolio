@@ -15,6 +15,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="js/scriptVue.js"></script>
     <title>Сайт-портфолио фронтенд / бэкенд бэкенд разработчика UglyGhoulChrist</title>
 </head>
 
@@ -68,61 +70,19 @@
                 <section class="about" id="about">
                     <div class="__block">
                         <h2 class="about__subtitle" data-aos="fade-up">&gt; Немного обо мне:</h2>
-                        <div class="about__text" data-aos="fade-up">
-                            * Мне 40 лет. Женат, дети.<br>
-                            * <br>
-                            * Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн университетов,
-                            смотрел
-                            обучающие видео из интернета, создавал свои небольшие проекты.<br>
-                            * Python понравился за простоту написания кода и огромную мощь языка, HTML и CSS - за сразу
-                            видимый результат на экране.<br>
-                            * Сейчас начинаю изучать Django и JavaScript.<br>
-                            * В будущем нацелен на Vue.js<br>
-                            * Так-же ради интереса пробовал писать программы для Andriod на Kotlin и для Windows на C#,
-                            но не зацепило.<br>
-                            * <br>
-                            * Если нужен стажёр (ученик) обращайтесь!<br>
-                            * <br>
+                        <div id="about-text">
+                            <div class="about__text" v-for="string in aboutText" data-aos="fade-up">
+                                * {{string}}</div>
                         </div>
                     </div>
                     <div class="__block">
                         <h2 class="about__subtitle" data-aos="fade-up">&gt; Мои навыки:</h2>
-                        <ul class="about__list">
-                            <li class="card" data-aos="fade-up">
+                        <ul id="skill-list" class="about__list">
+                            <li v-for="skill in skillList" class="card" data-aos="fade-up">
                                 <div class="card__picture">
-                                    <img src="img/about/html.svg" loading="lazy" alt="Html" class="card__image">
+                                    <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
                                 </div>
-                                <div class="card__text">Семантическая разметка кода</div>
-                            </li>
-                            <li class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img src="img/about/css.svg" loading="lazy" alt="Css" class="card__image">
-                                </div>
-                                <div class="card__text">Стилизация элементов на странице</div>
-                            </li>
-                            <li class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img src="img/about/sass.svg" loading="lazy" alt="Saas" class="card__image">
-                                </div>
-                                <div class="card__text">Быстрое написание стилей</div>
-                            </li>
-                            <li class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img src="img/about/figma.svg" loading="lazy" alt="Figma" class="card__image">
-                                </div>
-                                <div class="card__text">Верстка сайта по макету Figma</div>
-                            </li>
-                            <li class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img src="img/about/python.svg" loading="lazy" alt="Python" class="card__image">
-                                </div>
-                                <div class="card__text">Язык программирования общего назначения</div>
-                            </li>
-                            <li class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img src="img/about/django.svg" loading="lazy" alt="Django" class="card__image">
-                                </div>
-                                <div class="card__text">Пока только изучаю</div>
+                                <div class="card__text">{{skill.description}}</div>
                             </li>
                         </ul>
                     </div>

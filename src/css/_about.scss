@@ -15,7 +15,10 @@
 
     &__text {
         @include text;
-        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
     }
 
     &__list {
