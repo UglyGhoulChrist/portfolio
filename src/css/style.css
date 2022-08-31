@@ -578,7 +578,7 @@ body {
   justify-items: center;
   gap: 30px;
   max-width: 500px;
-  border: 3px solid red;
+  border: 3px solid black;
   border-radius: 20px;
   background: #eee;
   padding: 20px;
@@ -589,14 +589,6 @@ body {
 }
 .contact-popup__title {
   font-size: 1.2rem;
-}
-.contact-popup__btn {
-  border: 3px solid black;
-  border-radius: 10px;
-  background: blue;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: white;
 }
 
 .footer {

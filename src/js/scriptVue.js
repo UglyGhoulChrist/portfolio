@@ -35,3 +35,15 @@ Vue.createApp({
     methods: {
     },
 }).mount('#about-text');
+
+// Повтор введённого кода в блоке с JavaScript
+Vue.createApp({
+    data() {
+      return {
+        inputName: '',
+        inputEmail: '',
+        inputMessage: '',
+        newDate: new Date().toLocaleDateString(),
+      }
+    }
+  }).mount('#contact')

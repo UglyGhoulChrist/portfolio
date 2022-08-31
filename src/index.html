@@ -162,19 +162,19 @@
                         <h2 class="form__subtitle" data-aos="fade-up">&gt; Напишите мне</h2>
                         <label for="name" class="form__subtext" data-aos="fade-up">_Ваше имя:</label>
                         <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
-                            id="name">
+                        v-model="inputName">
                         <label for="email" class="form__subtext" data-aos="fade-up">_Ваша почта:</label>
                         <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                            id="email">
+                        v-model="inputEmail">
                         <label for="message" class="form__subtext" data-aos="fade-up">_Ваше сообщение:</label>
                         <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
-                            id="message"></textarea>
-                        <button id="contact-popup" type="submit" class="form__button"
+                        v-model="inputMessage"></textarea>
+                        <button id="contact-popup" type="button" class="form__button"
                             data-aos="fade-up">отправить</button>
                         <div class="contact-popup">
                             <div class="contact-popup__title">GitHubPages не поддерживает отправку формы, пишите в
                                 социальные сети.</div>
-                            <button tabindex="-1" id="contact-popup-close" class="contact-popup__btn">ЗАКРЫТЬ</button>
+                            <button type="button" tabindex="-1" id="contact-popup-close" class="form__button">ЗАКРЫТЬ</button>
                         </div>
                     </form>
                     <div class="code">
@@ -192,16 +192,16 @@
                                 </span><span class="pink">=
                                 </span>{</li>
                             <li class="code__item" data-aos="fade-up"><span class="violet"> name</span>
-                                : <span class="green">"<span id="resultName"></span>"</span>, </li>
+                                : <span class="green">"<span>{{inputName}}</span>"</span>, </li>
                             <li class="code__item" data-aos="fade-up">
                                 <span class="violet"> email</span>
-                                : <span class="green">"<span id="resultEmail"></span>"</span>,
+                                : <span class="green">"<span>{{inputEmail}}</span>"</span>,
                             </li>
                             <li class="code__item" data-aos="fade-up">
                                 <span class="violet"> message</span>
-                                : <span class="green">"<span id="resultMessage"></span>"</span>,
+                                : <span class="green">"<span>{{inputMessage}}</span>"</span>,
                             </li>
-                            <li class="code__item" data-aos="fade-up"> date: <span class="green">"Thu 21 Apr"</span>
+                            <li class="code__item" data-aos="fade-up"> date: <span class="green">"{{newDate}}"</span>
                             </li>
                             <li class="code__item" data-aos="fade-up">}</li>
                             <li class="code__item" data-aos="fade-up"></li>

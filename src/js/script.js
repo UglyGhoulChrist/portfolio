@@ -105,36 +105,42 @@ window.addEventListener("load", () => {
 
 
   // Повтор введённого кода в блоке с JavaScript
-  const myForm = document.forms.form;
-  const formName = myForm.name;
-  const formEmail = myForm.email;
-  const formMessage = myForm.message;
+  // const myForm = document.forms.form;
+  // const formName = myForm.name;
+  // const formEmail = myForm.email;
+  // const formMessage = myForm.message;
 
-  resultName = document.getElementById('resultName');
-  resultName.textContent = formName.placeholder;
-  resultEmail = document.getElementById('resultEmail');
-  resultEmail.textContent = formEmail.placeholder;
-  resultMessage = document.getElementById('resultMessage');
-  resultMessage.textContent = formMessage.placeholder;
+  // resultName = document.getElementById('resultName');
+  // resultName.textContent = formName.placeholder;
+  // resultEmail = document.getElementById('resultEmail');
+  // resultEmail.textContent = formEmail.placeholder;
+  // resultMessage = document.getElementById('resultMessage');
+  // resultMessage.textContent = formMessage.placeholder;
 
-  formName.oninput = function () {
-    resultName.textContent = formName.value;
-  };
-  formEmail.oninput = function () {
-    resultEmail.textContent = formEmail.value;
-  };
-  formMessage.oninput = function () {
-    resultMessage.textContent = formMessage.value;
-  };
+  // formName.oninput = function () {
+  //   resultName.textContent = formName.value;
+  // };
+  // formEmail.oninput = function () {
+  //   resultEmail.textContent = formEmail.value;
+  // };
+  // formMessage.oninput = function () {
+  //   resultMessage.textContent = formMessage.value;
+  // };
 
   // Попап при нажатии на форму всплывает один раз
-  // const myForm = document.forms.form;
+  const myForm = document.forms.form;
   const contactPopup = document.querySelector('.contact-popup');
 
   // При клике на форму всплывает попап и удаляется обработчик события 
-  myForm.addEventListener('click', toggleClass, { "once": true, });
+  myForm.addEventListener('click', 
+    toggleClass, { "once": true, }
+    // e.preventDefault();
+  );
   // При клике на попап убирается попап и удаляется обработчик события 
-  contactPopup.addEventListener('click', toggleClass, { "once": true, });
+  contactPopup.addEventListener('click', 
+    toggleClass, { "once": true, }
+    // e.preventDefault();
+  );
 
   function toggleClass() {
     contactPopup.classList.toggle('_active-contact-popup');
