@@ -1,0 +1,33 @@
+.project {
+    min-height: 100vh;
+    padding: 100px 0 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px 30px;
+
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    &__subtitle {
+        @include subtitle;
+    }
+
+    &__text {}
+
+    &__subtext {
+        @include subtext;
+    }
+
+    &__link {
+        @include link;
+        margin-top: -30px;
+    }
+
+    &__image {
+        width: 100%;
+        border: 3px solid $border;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,77 @@
+@mixin title {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-h1;
+
+    @media (max-width:460px) {
+        font-size: 42px;
+    }
+
+    @media (max-width:400px) {
+        font-size: 38px;
+    }
+
+    @media (max-width:360px) {
+        font-size: 32px;
+    }
+}
+
+@mixin subtitle {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: $color-h2;
+
+    @media (max-width:360px) {
+        font-size: 28px;
+    }
+}
+
+@mixin text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $color-text;
+}
+
+@mixin subtext {
+    line-height: 1.5;
+    color: $color-text;
+}
+
+@mixin link {
+    position: relative;
+    line-height: 1.5;
+    color: $color-link;
+    transition: all .5s ease 0s;
+
+    &::before {
+        position: absolute;
+        top: 25px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: $color-link;
+        opacity: .3;
+    }
+
+    &::after {
+        position: absolute;
+        top: 25px;
+        content: '';
+        display: block;
+        width: 0%;
+        height: 3px;
+        background: $color-link-after;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: $color-link-hover;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
