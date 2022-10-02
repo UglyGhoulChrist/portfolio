@@ -2,275 +2,310 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт-портфолио фронтенд / бэкенд разработчика UglyGhoulChrist">
-    <meta name="keywords" content="Портфолио, фронтенд, бэкенд, HTML, CSS, создание сайтов">
-    <meta name="author" content="UglyGhoulChrist@gmail.com">
-    <meta name="copyright" content="UglyGhoulChrist">
-    <meta name="address" content="Россия, Владимирская область, город Александров">
-    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="js/script.js"></script>
-    <script defer src="https://unpkg.com/vue@next"></script>
-    <script defer src="js/scriptVue.js"></script>
-    <title>Сайт-портфолио фронтенд / бэкенд бэкенд разработчика UglyGhoulChrist</title>
+	<title>Сайт-портфолио фронтенд / бэкенд бэкенд разработчика UglyGhoulChrist</title>
+	<style>
+		body {
+			opacity: 0;
+		}
+
+		;
+	</style>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221002214000">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="description" content="Сайт-портфолио фронтенд / бэкенд разработчика UglyGhoulChrist">
+	<meta name="keywords" content="Портфолио, фронтенд, бэкенд, HTML, CSS, создание сайтов">
+	<meta name="author" content="UglyGhoulChrist@gmail.com">
+	<meta name="copyright" content="UglyGhoulChrist">
+	<meta name="address" content="Россия, Владимирская область, город Александров">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="opacity: 0;">
-    <div class="wrapper">
-        <header class="header" id="header">
-            <div class="__container">
-                <nav class="navbar">
-                    <div class="navbar__wrap">
-                        <div class="hamb">
-                            <div class="hamb__field" id="hamb">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
-                        <a href="#" class="logo" id="logo">UglyGhoulChrist</a>
-                        <ul class="menu" id="menu">
-                            <li class="menu__item">
-                                <a class="menu__link" id="link_home" href="#home">_привет</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" id="link_about" href="#about">_обо мне</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" id="link_project" href="#project">_мои проекты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" id="link_footer" href="#footer">_контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="popup" id="popup"></div>
-            </div>
-        </header>
-        <div class="__container">
-            <main class="main">
-                <section class="home" id="home">
-                    <div class="__block">
-                        <div class="home__text">Привет. Меня зовут</div>
-                        <h1 class="home__title">UglyGhoulChrist</h1>
-                        <h2 class="home__subtitle">&gt; Я учусь на фронтенд / бэкенд разработчика
-                        </h2>
-                    </div>
-                    <div class="__block">
-                        <img src="img/home/image.webp" alt="Gadjets" class="home__image">
-                    </div>
-                </section>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">UglyGhoulChrist</a>
+				<div class="menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Привет</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Обо мне</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">Навыки</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="main">
 
-                <section class="about" id="about">
-                    <div class="__block">
-                        <h2 class="about__subtitle" data-aos="fade-up">&gt; Немного обо мне:</h2>
-                        <div id="about-text">
-                            <div class="about__text" v-for="string in aboutText" data-aos="fade-up">
-                                * {{string}}</div>
-                        </div>
-                    </div>
-                    <div class="__block">
-                        <h2 class="about__subtitle" data-aos="fade-up">&gt; Мои навыки:</h2>
-                        <ul id="skill-list" class="about__list">
-                            <li v-for="skill in skillList" class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
-                                </div>
-                                <div class="card__text">{{skill.description}}</div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+			<!-- Оболочка слайдера -->
+			<div class="swiper-page">
+				<!-- Двигающееся часть слайдера -->
+				<div class=" swiper-wrapper-page">
+					<!-- Слайд -->
+					<section class="swiper-slide hello" id="hello">
+						<div class="hello__container">
+							<div class="hello__block">
+								<p class="h1 h1_large">Привет!</p>
+								<p class="text">Меня зовут</p>
+								<h1 class="h1">UglyGhoulChrist</h1>
+								<h2 class="h2">&gt; Я учусь на фронтенд / бэкенд разработчика
+								</h2>
+							</div>
+							<div class="hello__image -ibg_background">
+								<picture><source srcset="img/hello/image.webp" type="image/webp"><img src="img/hello/image.webp" alt="Gadjets"></picture>
+							</div>
+						</div>
+					</section>
 
-                <section class="project" id="project">
-                    <div class="__block">
-                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт разработки ПО</h2>
-                        <div class="project__subtext" data-aos="fade-up">Проект создавался по макету в Adobe Photoshop
-                            2020. Желание пользоваться Adobe Photoshop пропало навсегда.
-                            Учебный проект. Разбирался с Slick-slider, Owl Carousel, Font Awesome, в каких случаях лучше grid или flex. Над адаптивом особо не заморачивался.
-                        </div>
-                        <a class="project__link" data-aos="fade-up"
-                            href="https://uglyghoulchrist.github.io/limponHtmlCssJs" target="_blank">
-                            <span class="violet">Сайт </span><span class="green">разработки </span><span
-                                class="pink">ПО</span></a>
-                    </div>
-                    <div class="__block" data-aos="fade-up">
-                        <img src="img/my-project/Limpon.jpg" loading="lazy" alt="Limpon" class="project__image">
-                    </div>
-                    <div class="__block">
-                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт-портфолио</h2>
-                        <div class="project__subtext" data-aos="fade-up">Проект редактируется в процессе изучения (HTML
-                            и CSS/SCSS).
-                        </div>
-                        <a class="project__link" data-aos="fade-up" href="https://github.com/UglyGhoulChrist/portfolio"
-                            target="_blank">
-                            <span class="violet">github</span><span class="green">.com/</span><span
-                                class="pink">portfolio</span></a>
+					<section class="swiper-slide about " id="about">
+						<div class="about__container content">
+							<div class="about__image -ibg_background">
+								<picture><source srcset="img/about/it.webp" type="image/webp"><img src="img/about/it.jpg" alt="It"></picture>
+							</div>
+							<div class="about__block">
+								<h2 class="h2 about__h2">&gt; Немного обо мне:</h2>
+								<p class="text text_before">Мне 40 лет. Женат, дети.</p>
+								<p class="text text_before">Осенью 2021 сильно увлёкся сферой It. Проходил курсы подготовки онлайн
+									университетов, смотрел обучающие видео из интернета, создавал свои небольшие проекты.</p>
+								<p class="text text_before">Python понравился за простоту написания кода и огромную мощь языка, HTML и CSS -
+									за сразу видимый результат на экране.</p>
+								<p class="text text_before">Сейчас изучаю Django и JavaScript.</p>
+								<p class="text text_before">Так-же ради интереса пробовал писать программы для Andriod на Kotlin и для
+									Windows на C#, но не зацепило.</p>
+								<p class="text text_before">Если нужен стажёр (ученик) обращайтесь!</p>
+							</div>
+						</div>
+					</section>
+					<section class="swiper-slide skills" id="skills">
+						<div class="skills__container">
+							<h2 class="h2 skills__h2">&gt; Мои навыки:</h2>
 
-                        <div class="project__subtext" data-aos="fade-up">Мои проекты на GitHub</div>
-                        <a class="project__link" data-aos="fade-up" href="https://github.com/UglyGhoulChrist"
-                            target="_blank">
-                            <span class="violet">github</span><span class="green">.com/</span><span
-                                class="pink">UglyGhoulChrist</span>
-                        </a>
-                    </div>
-                    <div class="__block" data-aos="fade-up">
-                        <img src="img/my-project/portfolio.webp" loading="lazy" alt="Сайт-портфолио"
-                            class="project__image">
-                    </div>
+							<!-- Оболочка слайдера -->
+							<div class="swiper-skills">
+								<!-- Двигающееся часть слайдера -->
+								<div class="swiper-wrapper-skills">
+									<!-- Слайды -->
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-html"></use>
+											</svg>
+										</div>
+										<div class="text">Семантическая разметка кода</div>
+									</div>
 
-                    <div class="__block">
-                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт доставки еды</h2>
-                        <div class="project__subtext" data-aos="fade-up">Учебный проект. Создавался при изучении HTML,
-                            CSS, SCSS,
-                            методологии БЭМ. Сейчас используется для изучения и экспериментов с JS, jQuery, Vue и т.д.
-                        </div>
-                        <a href="https://uglyghoulchrist.github.io/healthy-food/src/" data-aos="fade-up" target="_blank"
-                            class="project__link"><span class="violet">Сайт </span><span class="green">доставки
-                            </span><span class="pink">еды </span></a>
-                    </div>
-                    <div class="__block" data-aos="fade-up">
-                        <img src="img/my-project/healty_food.jpg" loading="lazy" alt="Сайт доставки еды"
-                            class="project__image">
-                    </div>
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-css"></use>
+											</svg>
+										</div>
+										<div class="text">Стилизация элементов на странице</div>
+									</div>
 
-                    <div class="__block">
-                        <h2 class="project__subtitle" data-aos="fade-up">&gt; John</h2>
-                        <div class="project__subtext" data-aos="fade-up">Проект на Django. Написан на HTML (с
-                            шаблонизатором jinja), CSS
-                            (SCSS), JS (немного jquery), также применялся сборщик webpack/gulp.
-                        </div>
-                        <a href="https://uglyghoulchrist.pythonanywhere.com/" data-aos="fade-up" target="_blank"
-                            class="project__link"><span class="violet">https://</span><span
-                                class="green">...pythonanywhere.</span><span class="pink">com/</span></a>
-                    </div>
-                    <div class="__block" data-aos="fade-up">
-                        <img src="img\my-project\JohnDjango.jpg" loading="lazy" alt="Сайт John" class="project__image">
-                    </div>
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-sass"></use>
+											</svg>
+										</div>
+										<div class="text">Быстрое написание стилей</div>
+									</div>
 
-                    <div class="__block">
-                        <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт ремонта автомобилей</h2>
-                        <div class="project__subtext" data-aos="fade-up">Учебный проект. Создавался при изучении HTML,
-                            CSS, SCSS,
-                            методологии БЭМ... Многое не сделано. Особенно адаптив! Сейчас используется для изучения и
-                            экспериментов с JS, jQuery, Vue и т.д.</div>
-                        <a href="https://uglyghoulchrist.github.io/sample-car-repair/src/" data-aos="fade-up"
-                            target="_blank" class="project__link"><span class="violet">Сайт </span><span
-                                class="green">ремонта
-                            </span><span class="pink">автомобилей </span></a>
-                    </div>
-                    <div class="__block" data-aos="fade-up">
-                        <img src="img/my-project/car.jpg" loading="lazy" alt="Сайт ремонта автомобилей"
-                            class="project__image">
-                    </div>
-                </section>
-                <section class="contact" id="contact">
-                    <form name="form" autocomplete="off" class="form" action="mailto:UglyGhoulChrist@gmail.com"
-                        enctype="text/plain">
-                        <h2 class="form__subtitle" data-aos="fade-up">&gt; Напишите мне</h2>
-                        <label for="name" class="form__subtext" data-aos="fade-up">_Ваше имя:</label>
-                        <input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя"
-                            v-model="inputName">
-                        <label for="email" class="form__subtext" data-aos="fade-up">_Ваша почта:</label>
-                        <input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email"
-                            v-model="inputEmail">
-                        <label for="message" class="form__subtext" data-aos="fade-up">_Ваше сообщение:</label>
-                        <textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение"
-                            v-model="inputMessage"></textarea>
-                        <button id="contact-popup" type="button" class="form__button"
-                            data-aos="fade-up">отправить</button>
-                        <div class="contact-popup">
-                            <div class="contact-popup__title">GitHubPages не поддерживает отправку формы, пишите в
-                                социальные сети.</div>
-                            <button type="button" tabindex="-1" id="contact-popup-close"
-                                class="form__button">ЗАКРЫТЬ</button>
-                        </div>
-                    </form>
-                    <div class="code">
-                        <h2 class="code__subtitle" data-aos="fade-up">&gt; Java Script</h2>
-                        <ul class="code__list">
-                            <li class="code__item" data-aos="fade-up"><span class="pink">const </span><span
-                                    class="violet">button
-                                </span><span class="pink">=
-                                </span><span class="violet">document.querySelector </span>( <span
-                                    class="green">'#sendBtn'
-                                </span>);</li>
-                            <li class="code__item" data-aos="fade-up"></li>
-                            <li class="code__item" data-aos="fade-up"><span class="pink">const </span><span
-                                    class="violet">message
-                                </span><span class="pink">=
-                                </span>{</li>
-                            <li class="code__item" data-aos="fade-up"><span class="violet"> name</span>
-                                : <span class="green">"<span>{{inputName}}</span>"</span>, </li>
-                            <li class="code__item" data-aos="fade-up">
-                                <span class="violet"> email</span>
-                                : <span class="green">"<span>{{inputEmail}}</span>"</span>,
-                            </li>
-                            <li class="code__item" data-aos="fade-up">
-                                <span class="violet"> message</span>
-                                : <span class="green">"<span>{{inputMessage}}</span>"</span>,
-                            </li>
-                            <li class="code__item" data-aos="fade-up"> date: <span class="green">"{{newDate}}"</span>
-                            </li>
-                            <li class="code__item" data-aos="fade-up">}</li>
-                            <li class="code__item" data-aos="fade-up"></li>
-                            <li class="code__item" data-aos="fade-up">
-                                <span class="violet">button.addEventListener</span>(
-                                <span class="green">'click'</span>, ()
-                                <span class="green"> =&gt;</span> {
-                            </li>
-                            <li class="code__item" data-aos="fade-up">
-                                <span class="violet"> form.send</span>(<span class="violet">
-                                    message</span> );
-                            </li>
-                            <li class="code__item" data-aos="fade-up">})</li>
-                        </ul>
-                    </div>
-                </section>
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-figma"></use>
+											</svg>
+										</div>
+										<div class="text">Верстка сайта по макету Figma</div>
+									</div>
 
-            </main>
-            <footer class="footer" id="footer">
-                <a href="mailto:UglyGhoulChrist@gmail.com" target="_blank"
-                    class="footer__mail">UglyGhoulChrist@gmail.com</a>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="https://wa.me/79101807117" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/WhatsApp.svg" loading="lazy" alt="WhatsApp" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                    <!-- <li class="footer__item">
-                        <a href="viber://chat?number=79101807117" rel="nofollow" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/Viber.svg" alt="Viber" class="footer__img">
-                            </div>
-                        </a>
-                    </li> -->
-                    <li class="footer__item">
-                        <a href="https://t.me/UglyGhoulChrist" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/Telegram.svg" loading="lazy" alt="Telegram" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="http://vk.com/id709622701" target="_blank" class="footer__link">
-                            <div class="footer__icon">
-                                <img src="img/footer/VK.svg" loading="lazy" alt="VK" class="footer__img">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
-    </div>
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<!-- картинка python не работает через спрайт -->
+											<img src="img/skills/python.svg" alt="python">
+										</div>
+										<div class="text">Язык программирования общего назначения</div>
+									</div>
+
+									<div class="card swiper-slide">
+										<div class="card__image -ibg">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-django"></use>
+											</svg>
+										</div>
+										<div class="text">Пока только изучаю</div>
+									</div>
+								</div>
+								<!-- Если нужна пагинация -->
+								<div class="swiper-pagination-skills"></div>
+							</div>
+						</div>
+					</section>
+					<section class="swiper-slide projects" id="projects">
+						<div class="projects__container">
+							<h2 class="h2 projects__h2">&gt; Мои проекты:</h2>
+							<!-- Оболочка слайдера -->
+							<div class="swiper-projects">
+								<!-- Двигающееся часть слайдера -->
+								<div class="swiper-wrapper-projects">
+									<!-- Слайд -->
+									<div class="swiper-slide project">
+										<a href="https://uglyghoulchrist.github.io/limponHtmlCssJs" target="_blank" id="height-img" class="project__image -ibg">
+											<picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/projects/Limpon.jpg" src="img/1x1.jpg" alt="Сайт разработки ПО"></picture>
+										</a>
+										<h2 class="h2"> <span class="violet">Сайт </span><span class="green">разработки </span><span class="pink">ПО</span>
+										</h2>
+										<p class="text">Проект создавался по макету в Adobe Photoshop 2020. Желание пользоваться Adobe
+											Photoshop пропало навсегда. Учебный проект. Разбирался с Slick-slider, Owl Carousel, Font
+											Awesome, в каких случаях лучше grid или flex. Над адаптивом особо не заморачивался.</p>
+									</div>
+									<div class="swiper-slide project">
+										<a href="https://github.com/UglyGhoulChrist/portfolio" target="_blank" class="project__image -ibg">
+											<picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/projects/portfolio.jpg" src="img/1x1.jpg" alt="Сайт-портфолио"></picture>
+										</a>
+										<h2 class="h2">
+											<span class="violet">Сайт</span><span class="green">-</span><span class="pink">портфолио</span>
+										</h2>
+										<p class="text">Проект редактируется в процессе изучения (HTML и CSS/SCSS).</p>
+										<div class="h2">
+											<a class="link" href="https://github.com/UglyGhoulChrist" target="_blank">
+												<span class="violet">Мои </span><span class="green">проекты </span><span class="pink">на
+												</span><span class="violet">GitHub</span>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide project">
+										<a href="https://uglyghoulchrist.github.io/healthy-food/src/" target="_blank" class="project__image -ibg">
+											<picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/projects/healty_food.jpg" src="img/1x1.jpg" alt="Сайт доставки еды"></picture>
+										</a>
+										<h2 class="h2">
+											<span class="violet">Сайт </span><span class="green">доставки </span><span class="pink">еды
+											</span>
+										</h2>
+										<p class="text">Учебный проект. Создавался при изучении HTML, CSS, SCSS, методологии БЭМ. Сейчас
+											используется для изучения и экспериментов с JS, jQuery, Vue и т.д.</p>
+									</div>
+									<div class="swiper-slide project">
+										<a href="https://uglyghoulchrist.pythonanywhere.com/" target="_blank" class="project__image -ibg">
+											<picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/projects/JohnDjango.jpg" src="img/1x1.jpg" alt="Сайт John"></picture>
+										</a>
+										<h2 class="h2">
+											<span class="violet">Сайт </span><span class="green">John </span><span class="pink"> + блог +
+											</span><span class="violet"> проекты</span>
+										</h2>
+										<p class="text">Проект на Django. Написан на HTML (с шаблонизатором jinja), CSS
+											(SCSS), JS (немного jquery), также применялся сборщик webpack/gulp.</p>
+									</div>
+									<div class="swiper-slide project">
+										<a href="https://uglyghoulchrist.github.io/sample-car-repair/src/" target="_blank" class="project__image -ibg">
+											<picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/projects/car.jpg" src="img/1x1.jpg" alt="Сайт ремонта автомобилей"></picture>
+										</a>
+										<h2 class="h2">
+											<span class="violet">Сайт </span><span class="green">ремонта
+											</span><span class="pink">автомобилей </span>
+										</h2>
+										<p class="text">Учебный проект. Создавался при изучении HTML, CSS, SCSS, методологии БЭМ... Многое
+											не сделано. Особенно адаптив! Сейчас используется для изучения и экспериментов с JS, jQuery, Vue
+											и т.д.</p>
+									</div>
+								</div>
+								<!-- Если нужна пагинация -->
+								<div id="swiper-pagination-projects" class="swiper-pagination-projects"></div>
+							</div>
+						</div>
+					</section>
+					<section class="swiper-slide contacts" id="contacts">
+						<div class="contacts__container">
+							<form name="form" autocomplete="off" data-popup="#popup" class="form" action="mailto:UglyGhoulChrist@gmail.com" enctype="text/plain">
+								<h2 class="h2">&gt; Напишите мне</h2>
+								<label for="name" class="text">_Ваше имя:</label>
+								<input class="form__input" maxlength="40" type="text" name="name" placeholder="Ваше имя" v-model="inputName">
+								<label for="email" class="text">_Ваша почта:</label>
+								<input class="form__input" maxlength="40" type="email" name="email" placeholder="Ваш Email" v-model="inputEmail">
+								<label for="message" class="text">_Ваше сообщение:</label>
+								<textarea class="form__input form__input_message" name="message" placeholder="Ваше сообщение" v-model="inputMessage"></textarea>
+								<button id="contact-popup" type="button" class="button">отправить</button>
+							</form>
+							<div class="code">
+								<h2 class="h2">&gt; Java Script</h2>
+								<ul class="code__list">
+									<li class="code__item text"><span class="pink">const </span><span class="violet">button
+										</span><span class="pink">=
+										</span><span class="violet">document.querySelector </span>( <span class="green">'#sendBtn'
+										</span>);</li>
+									<li class="code__item code__item_height text"></li>
+									<li class="code__item text"><span class="pink">const </span><span class="violet">message
+										</span><span class="pink">=
+										</span>{</li>
+									<li class="code__item text"><span class="violet"> name</span>
+										: <span class="green">"<span id="resultName"></span>"</span>, </li>
+									<li class="code__item text">
+										<span class="violet"> email</span>
+										: <span class="green">"<span id="resultEmail"></span>"</span>,
+									</li>
+									<li class="code__item text">
+										<span class="violet"> message</span>
+										: <span class="green">"<span id="resultMessage"></span>"</span>,
+									</li>
+									<li class="code__item text"> date: <span class="green" id="newDate"></span>
+									</li>
+									<li class="code__item text">}</li>
+									<li class="code__item text"></li>
+									<li class="code__item text">
+										<span class="violet">button.addEventListener</span>(
+										<span class="green">'click'</span>, ()
+										<span class="green"> =&gt;</span> {
+									</li>
+									<li class="code__item text">
+										<span class="violet"> form.send</span>(<span class="violet">
+											message</span> );
+									</li>
+									<li class="code__item text">})</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- Если нужна пагинация -->
+				<div class="swiper-pagination-page"></div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="mailto:UglyGhoulChrist@gmail.com" target="_blank" class="footer__mail">UglyGhoulChrist@gmail.com</a>
+				<ul class="footer__list">
+					<li> <a href="https://wa.me/79101807117" target="_blank" class="footer__link _icon-whatsapp"> </a> </li>
+					<li> <a href="https://t.me/UglyGhoulChrist" target="_blank" class="footer__link _icon-tg"></a> </li>
+					<li> <a href="http://vk.com/id709622701" target="_blank" class="footer__link _icon-vk"></a> </li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="h2">GitHubPages не поддерживает отправку формы, пишите в социальные сети.</div>
+				<button data-close type="button" class="popup__close button">Закрыть</button>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20221002214000"></script>
 </body>
 
 </html>
