@@ -28,12 +28,28 @@
         gap: 25px;
 
         @media (max-width:426px) {
-            grid-template-columns: 1fr;
+            display: flex;
+
         }
+    }
+
+    &__block {
+        width: 100%;
+
+        @media (max-width:426px) {
+            overflow-x: auto;
+        }
+
     }
 }
 
 .card {
+
+    @media (max-width:426px) {
+        width: 75vw;
+    }
+
+
     padding: 24px;
     border: 3px solid $border;
     border-radius: 6px;

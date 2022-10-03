@@ -354,7 +354,15 @@ body {
 }
 @media (max-width: 426px) {
   .about__list {
-    grid-template-columns: 1fr;
+    display: flex;
+  }
+}
+.about__block {
+  width: 100%;
+}
+@media (max-width: 426px) {
+  .about__block {
+    overflow-x: auto;
   }
 }
 
@@ -364,6 +372,11 @@ body {
   border-radius: 6px;
   text-align: center;
   transition: all 1s ease 0s;
+}
+@media (max-width: 426px) {
+  .card {
+    width: 75vw;
+  }
 }
 .card__text {
   font-size: 18px;
@@ -638,4 +651,4 @@ body {
 }
 .footer__img {
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
