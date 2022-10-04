@@ -81,19 +81,15 @@
                     </div>
                     <div class="__block">
                         <h2 class="about__subtitle" data-aos="fade-up">&gt; Мои навыки:</h2>
-
-                        <div class="about__block">
-                            <ul id="skill-list" class="about__list">
-                                <li v-for="skill in skillList" class="card" data-aos="fade-up">
-                                    <div class="card__picture">
-                                        <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
-                                    </div>
-                                    <div class="card__text">{{skill.description}}</div>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                        <div class="about__pagination">-></div>
+                        <ul id="skill-list" class="about__list">
+                            <li v-for="skill in skillList" class="about__item card" data-aos="fade-up">
+                                <div class="card__picture">
+                                    <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
+                                </div>
+                                <div class="card__text">{{skill.description}}</div>
+                            </li>
+                        </ul>
+                        <div data-aos="fade-up" class="about__pagination">&lt;- -&gt;</div>
                     </div>
                 </section>
 
