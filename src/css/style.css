@@ -363,6 +363,21 @@ body {
 @media (max-width: 426px) {
   .about__block {
     overflow-x: auto;
+    padding-bottom: 30px;
+  }
+}
+.about__pagination {
+  font-size: 40px;
+  color: #3F51B5;
+  margin-top: -80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 426px) {
+  .about__pagination {
+    display: none;
+    margin-top: 0;
   }
 }
 

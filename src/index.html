@@ -10,6 +10,10 @@
     <meta name="author" content="UglyGhoulChrist@gmail.com">
     <meta name="copyright" content="UglyGhoulChrist">
     <meta name="address" content="Россия, Владимирская область, город Александров">
+    <!-- мета теги telegram, whatsapp -->
+    <meta itemprop="name" content="Сайт-портфолио фронтенд / бэкенд разработчика UglyGhoulChrist">
+    <meta itemprop="description" content="Портфолио, фронтенд, бэкенд, HTML, CSS, создание сайтов">
+    <meta itemprop="image" content="./img/my-project/portfolio.webp">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -77,16 +81,19 @@
                     </div>
                     <div class="__block">
                         <h2 class="about__subtitle" data-aos="fade-up">&gt; Мои навыки:</h2>
-                        
+
                         <div class="about__block">
-                        <ul id="skill-list" class="about__list">
-                            <li v-for="skill in skillList" class="card" data-aos="fade-up">
-                                <div class="card__picture">
-                                    <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
-                                </div>
-                                <div class="card__text">{{skill.description}}</div>
-                            </li>
-                        </ul></div>
+                            <ul id="skill-list" class="about__list">
+                                <li v-for="skill in skillList" class="card" data-aos="fade-up">
+                                    <div class="card__picture">
+                                        <img :src="skill.img" loading="lazy" :alt="skill.name" class="card__image">
+                                    </div>
+                                    <div class="card__text">{{skill.description}}</div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="about__pagination">-></div>
                     </div>
                 </section>
 
@@ -95,7 +102,8 @@
                         <h2 class="project__subtitle" data-aos="fade-up">&gt; Сайт разработки ПО</h2>
                         <div class="project__subtext" data-aos="fade-up">Проект создавался по макету в Adobe Photoshop
                             2020. Желание пользоваться Adobe Photoshop пропало навсегда.
-                            Учебный проект. Разбирался с Slick-slider, Owl Carousel, Font Awesome, в каких случаях лучше grid или flex. Над адаптивом особо не заморачивался.
+                            Учебный проект. Разбирался с Slick-slider, Owl Carousel, Font Awesome, в каких случаях лучше
+                            grid или flex. Над адаптивом особо не заморачивался.
                         </div>
                         <a class="project__link" data-aos="fade-up"
                             href="https://uglyghoulchrist.github.io/limponHtmlCssJs" target="_blank">

@@ -38,8 +38,20 @@
 
         @media (max-width:426px) {
             overflow-x: auto;
+            padding-bottom: 30px;
         }
+    }
 
+    &__pagination {
+        font-size: 40px;
+        color: $color-h2;
+        margin-top: -80px;
+        height: fit-content;
+
+        @media (min-width:426px) {
+            display: none;
+            margin-top: 0;
+        }
     }
 }
 
